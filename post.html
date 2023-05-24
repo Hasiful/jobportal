@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./dashboard.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./employeeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Company Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./post.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Post a Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Job Post</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./allaplications.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">All Aplications</span>
+                                </a>
+                            </li>
+                          
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a href="./dashboard.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="">
+                                </a>
+                            </div>
+                       <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <!-- admin toggle -->
+                            <div class="admin_collopse admin_mobileCol" id="adminMobile">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint3.jpg" alt="">
+                                </div>
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">
+                                        <span>Super Admin</span>
+                                        <!-- icon -->
+                                        <span class="admin_collaps_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.147" viewBox="0 0 12 6.147">
+                                            <path class="cx_1630815321671_svg_icons" d="M16.749,8.165a.857.857,0,0,0-1.212,0L11.606,12.1a.875.875,0,0,1-1.212,0L6.463,8.165A.857.857,0,1,0,5.251,9.377l3.93,3.931a2.571,2.571,0,0,0,3.637,0l3.931-3.931A.857.857,0,0,0,16.749,8.165Z" transform="translate(-5 -7.914)" fill="#7c929a"></path></svg>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- admin collapse nav -->
+                                <div class="admin_collapse_nav">
+                                    <!-- admin collapse nav -->
+                                    <ul class="sidebar_navList">
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./dashboard.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./employeeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/profile.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Company Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./post.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/view.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Post a Jobs</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">View Job Post</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./allaplications.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/save.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">All Aplications</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="#" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/Logout.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Job Post</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Job-Post</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- admin container -->
+                    <div class="admin_container">
+                        <!-- multistep job post -->
+                        <form id="progress-form" class="step_jobpost_wrapper">
+                            <!-- ste btn -->
+                            <div class="step_jobpost_tab" role="tablist">
+                                <button class="step_jobpost_tabBtn" role="tab">
+                                    Job Information
+                                </button>
+                                <button class="step_jobpost_tabBtn" role="tab">
+                                    More Job Information
+                                </button>
+                                <button class="step_jobpost_tabBtn" role="tab">
+                                    Requirements
+                                </button>
+                                <button class="step_jobpost_tabBtn" role="tab">
+                                    Info Visibility
+                                </button>
+                                <button class="step_jobpost_tabBtn" role="tab">
+                                    Preview
+                                </button>
+                                <button class="step_jobpost_tabBtn" role="tab">
+                                    Complte
+                                </button>
+                            </div>
+                            <!-- end tabs btn -->
+                            <!-- Step 1 -->
+                            <div role="tabpanel">
+                                <!-- step -->
+                                <div class="job_poststep">
+                                    <p class="obout_user_title">Primary information</p>
+                                    <!-- job post step form -->
+                                    <div class="job_poststep_form">
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Service Type:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="test2" name="radio-group" required>
+                                                    <label for="test2">Stad-out Listing</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="test3" name="radio-group" required>
+                                                    <label for="test3">Stad-out Premium</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Title:</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input" required>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Enter Vacancies Numuber:</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input" required>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Category:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="cate1" name="category" required>
+                                                    <label for="cate1">IT Telecommunication</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="cate2" name="category" required>
+                                                    <label for="cate2">Software</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="cate3" name="category" required>
+                                                    <label for="cate3">Health</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="cate4" name="category" required>
+                                                    <label for="cate4">Goverment</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="cate5" name="category" required>
+                                                    <label for="cate5">NGO</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="cate6" name="category" required>
+                                                    <label for="cate6">Diploma</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Type:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Full time</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Part Time</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Internship</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Contructual</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Application Date:</label>
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="Pick a date" class="date-input input_control contact_input">
+                                                </div>
+                                             </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">resume receiving Option:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Online Apply</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Email</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- step btn -->
+                                    <div class="job_poststep_btnwrapper">
+                                        <button class="global_btn btnHover main_btn" type="button" data-action="next">
+                                           Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div role="tabpanel" hidden>
+                                <!-- step -->
+                                <div class="job_poststep">
+                                    <p class="obout_user_title">More information</p>
+                                    <!-- job post step form -->
+                                    <div class="job_poststep_form">
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Level:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="jobtype" name="jobtype-radio" required>
+                                                    <label for="jobtype">Entry</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="mid" name="jobtype-radio" required>
+                                                    <label for="mid">Mid</label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="Top" name="jobtype-radio" required>
+                                                    <label for="Top">Top</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Context:</label>
+                                            <!-- input -->
+                                            <textarea class="input_control contact_input contact_textarea" required></textarea>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Responsibilities</label>
+                                            <!-- input -->
+                                            <textarea class="input_control contact_input contact_textarea" required></textarea>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Work Place:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Work At office</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Work Form Home</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Job Location:</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input" required="">
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Salary:</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <div class="job_step_checkinner job_step_subcheck">
+                                                <!-- item -->   
+                                                <div class="job_step_checkitem">
+                                                    <input type="radio" id="Negotivility" name="salary" required>
+                                                    <label for="Negotivility">Negotiable</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Additional Salary Info</label>
+                                            <!-- input -->
+                                            <textarea class="input_control contact_input contact_textarea" required=""></textarea>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Other Benifit:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Mobile Bil</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Pension Policy</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Tour Allowance</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Credit Card</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Medical Allowance</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Overtime Allowance</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- step btn -->
+                                    <div class="job_poststep_btnwrapper">
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="prev">Back</button>
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="next">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div role="tabpanel" hidden>
+                                <!-- step -->
+                                <div class="job_poststep">
+                                    <p class="obout_user_title">Requirements</p>
+                                    <!-- job post step form -->
+                                    <div class="job_poststep_form">
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Educational Qualification:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Bacholor/Honors</option>
+                                                    </select>
+                                                </div>
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Bacholor Degree in</option>
+                                                    </select>
+                                                </div>
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Concentration/Major</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Preferrd Educational Institute:</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input">
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Other Educational Qualification</label>
+                                            <!-- input -->
+                                            <textarea class="input_control contact_input contact_textarea" required></textarea>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Training/Trade Course</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input">
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Professional Certificate</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input">
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Expreience:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner job_step_selectinner">
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Minimum Expreience</option>
+                                                        <option value="">0</option>
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                        <option value="">6</option>
+                                                        <option value="">7</option>
+                                                    </select>
+                                                </div>
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Maximum Expreience</option>
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                        <option value="">6</option>
+                                                        <option value="">7</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Skills:</label>
+                                            <!-- input -->
+                                            <input type="text" class="input_control contact_input" required="">
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Additional Requirements</label>
+                                            <!-- input -->
+                                            <textarea class="input_control contact_input contact_textarea" required=""></textarea>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Gender:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner">
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Male</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Female</span>
+                                                    </label>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="job_step_checkitem">
+                                                    <!-- inner check -->
+                                                    <label class="check_inner cheninner_custom">
+                                                        <input type="checkbox" required>
+                                                        <span class="checkmark">Others</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Age:</label>
+                                            <!-- input -->
+                                            <div class="job_step_checkinner job_step_selectinner">
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Min</option>
+                                                        <option value="">18</option>
+                                                        <option value="">19</option>
+                                                        <option value="">20</option>
+                                                        <option value="">21</option>
+                                                        <option value="">22</option>
+                                                        <option value="">23</option>
+                                                        <option value="">24</option>
+                                                        <option value="">25</option>
+                                                    </select>
+                                                </div>
+                                                <div class="job_step_select">
+                                                    <select class="input_control contact_input">
+                                                        <option value="">Max</option>
+                                                        <option value="">26</option>
+                                                        <option value="">27</option>
+                                                        <option value="">28</option>
+                                                        <option value="">29</option>
+                                                        <option value="">30</option>
+                                                        <option value="">31</option>
+                                                        <option value="">32</option>
+                                                        <option value="">33</option>
+                                                        <option value="">34</option>
+                                                        <option value="">35</option>
+                                                        <option value="">36</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                    </div>
+                                    <!-- step btn -->
+                                    <div class="job_poststep_btnwrapper">
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="prev">Back</button>
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="next">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div role="tabpanel" hidden>
+                                <!-- step -->
+                                <div class="job_poststep">
+                                    <p class="obout_user_title">Company Information</p>
+                                    <!-- job post step form -->
+                                    <div class="job_poststep_form">
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Company Name:</label>
+                                            <!-- input -->
+                                            <!-- label check -->
+                                            <label class="label_check">
+                                                <input type="checkbox">
+                                                <span class="label_checkBg">
+                                                    <span class="label_check_hide">Hide</span>
+                                                    <span class="label_check_show">Show</span>
+                                                </span>
+                                                <span class="label_checkround"></span>
+                                            </label>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Company Address:</label>
+                                            <!-- input -->
+                                            <!-- label check -->
+                                            <label class="label_check">
+                                                <input type="checkbox">
+                                                <span class="label_checkBg">
+                                                    <span class="label_check_hide">Hide</span>
+                                                    <span class="label_check_show">Show</span>
+                                                </span>
+                                                <span class="label_checkround"></span>
+                                            </label>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Company Industry Type:</label>
+                                            <select class="input_control contact_input">
+                                                <option value="">Software</option>
+                                                <option value="">Health</option>
+                                                <option value="">Developer</option>
+                                            </select>
+                                        </div>
+                                        <!-- jobpost_step_item -->
+                                        <div class="jobpost_step_item">
+                                            <!-- title -->
+                                            <label for="" class="jobpost_input_title">Company Business:</label>
+                                            <!-- label check -->
+                                            <label class="label_check">
+                                                <input type="checkbox">
+                                                <span class="label_checkBg">
+                                                    <span class="label_check_hide">Hide</span>
+                                                    <span class="label_check_show">Show</span>
+                                                </span>
+                                                <span class="label_checkround"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- step btn -->
+                                    <div class="job_poststep_btnwrapper">
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="prev">Back</button>
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="next">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 5 -->
+                            <div role="tabpanel" hidden>
+                                <!-- step -->
+                                <div class="job_poststep">
+                                    <p class="obout_user_title">Preview</p>
+                                    <!-- job post step form -->
+                                    <div class="job_poststep_form">
+                                        <!-- job preview -->
+                                        <div class="job_post_details">
+                                            <!-- jobpost overview -->
+                                            <div class="job_post_overview">
+                                                <!-- jopb title -->
+                                                <h2 class="job_post_title">Software Engineer For Meta</h2>
+                                                <!-- list -->
+                                                <ul class="jobPost_descreption_list">
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- location icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/location.png" alt="location">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Canada, Begumpara</span>
+                                                    </li>
+                
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- time icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/timeicon.png" alt="image">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Full Time</span>
+                                                    </li>
+                                                </ul>
+                                                <!-- job overview list -->
+                                                <ul class="job_overview_list">
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Industry:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">Software Company</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Job level:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">Frontend Developer</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Salary:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">$800 - $1000</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Experience:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">1-2 Years</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Job type:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">Parmanent</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Deadline:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">26 March,2023</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Updated:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">26 March,2023</span>
+                                                    </li>
+                                                    <!-- job list -->
+                                                    <li>
+                                                        <div class="job_overview_title">
+                                                            <span class="batch_icon"></span>
+                                                            <span>Location:</span>
+                                                        </div>
+                                                        <span class="job_overview_designation">Uttora, 9# Sector.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- overview Content -->
+                                            <div class="job_overview_content">
+                                                <!-- block -->
+                                                <div class="job_postdetails_block">
+                                                    <!-- job block title -->
+                                                    <h5 class="job_postdetails_title">Job Description:</h5>
+                                                    <!-- job descreption text -->
+                                                    <p class="job_descreption_text">
+                                                        One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others - which creates a distinct visual impression. Moreover, in Latin only words at the beginning of sentences are capitalized.
+                                                    </p>
+                                                    <!-- job descreption text -->
+                                                    <p class="job_descreption_text">
+                                                        This means that Lorem Ipsum cannot accurately represent, for example, German, in which all nouns are capitalized. Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces.
+                                                    </p>
+                                                    <!-- job descreption text -->
+                                                    <p class="job_descreption_text">
+                                                        It sometimes makes sense to select texts containing the various letters and symbols specific to the output language.
+                                                    </p>
+                                                </div>
+                                                <!-- block -->
+                                                <div class="job_postdetails_block">
+                                                    <!-- job block title -->
+                                                    <h5 class="job_postdetails_title">Responsibilities and Duties:</h5>
+                                                    <!-- job descreption text -->
+                                                    <p class="job_descreption_text">
+                                                        It sometimes makes sense to select texts containing the various letters and symbols specific to the output language.
+                                                    </p>
+                                                    <!-- job required list -->
+                                                    <div class="job_required_list">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Participate in requirements analysis</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Write clean, scalable code using C# and .NET frameworks</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Test and deploy applications and systems</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Revise, update, refactor and debug code</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Improve existing software</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Develop documentation throughout the software development life cycle (SDLC)</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Serve as an expert on applications and provide technical support</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- block -->
+                                                <div class="job_postdetails_block">
+                                                    <!-- job block title -->
+                                                    <h5 class="job_postdetails_title">Required Experience, Skills and Qualifications:</h5>
+                                                    <!-- job descreption text -->
+                                                    <p class="job_descreption_text">
+                                                        It sometimes makes sense to select texts containing the various letters and symbols specific to the output language.
+                                                    </p>
+                                                    <!-- job required list -->
+                                                    <div class="job_required_list">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Proven experience as a .NET Developer or Application Developer</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>good understanding of SQL and Relational Databases, specifically Microsoft SQL Server.</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Experience designing, developing and creating RESTful web services and APIs</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Basic know how of Agile process and practices</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Good understanding of object-oriented programming.</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Good understanding of concurrent programming.</span>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/image/icon/arowleftc.png" alt="">
+                                                                <span>Excellent problem solving and analytical skills</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- step btn -->
+                                    <div class="job_poststep_btnwrapper">
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="prev">Back</button>
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="next">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 6 -->
+                            <div role="tabpanel" hidden>
+                                <!-- step -->
+                                <div class="job_poststep">
+                                    <!-- job post step form -->
+                                    <div class="job_poststep_form">
+                                        <!-- mark -->
+                                        <div class="post_done_mark">
+                                            <img src="assets/image/icon/done.png" alt="">
+                                        </div>
+                                        <!-- success title -->
+                                        <h3 class="post_success_title">Post has been Success</h3>
+                                        <p class="post_success_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti ex cupiditate dolore possimus perspiciatis dolor ipsum magnam harum veritatis, eligendi dolorum impedit repellat eos dicta adipisci commodi illum odio.</p>
+                                    </div>
+                                    <!-- step btn -->
+                                    <div class="job_poststep_btnwrapper">
+                                        <button type="button" class="global_btn btnHover main_btn" data-action="prev">Back</button>
+                                        <button type="submit" class="global_btn btnHover main_btn">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                 <!-- bottom nav -->
+                 <div class="bottom_nav">
+                    <!-- wrapper -->
+                    <ul class="bottom_navlist bottom_navPanel">
+                        <!-- list -->
+                        <li>
+                            <a>
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/Logout.png" alt="">
+                                </div>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/profile.png" alt="">
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image activeBottom">
+                                    <img src="assets/image/mobile/dahs.png" alt="">
+                                </div>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/applyjobs.png" alt="">
+                                </div>
+                                <span>Jobs Post</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="others_navbottom">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/others.png" alt="">
+                                </div>
+                                <span>Others</span>
+                            </a>
+                            <ul class="panel_others_list" id="others_navbList">
+                                <li>
+                                    <a href="./allaplications.html">
+                                        <img src="assets/image/mobile/save.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./eviewjobpost.html">
+                                        <img src="assets/image/mobile/view.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- jobpost -->
+        <script src="assets/js/jobpost.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- date picker -->
+        <script src="assets/js/datepicker.js"></script>
+    </body>
+</html>

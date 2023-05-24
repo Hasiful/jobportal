@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./userpanel.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./profile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./resume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./savejobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Save Job</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                          
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./applyjobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Apply Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./emailresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/email.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Emailed Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                            <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a="" href="./userpanel.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="">
+                                </a>
+                            </div>
+                       <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <!-- admin toggle -->
+                            <div class="admin_collopse admin_mobileCol" id="adminMobile">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint2.jpg" alt="">
+                                </div>
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">
+                                        <span>Super Admin</span>
+                                        <!-- icon -->
+                                        <span class="admin_collaps_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.147" viewBox="0 0 12 6.147">
+                                            <path class="cx_1630815321671_svg_icons" d="M16.749,8.165a.857.857,0,0,0-1.212,0L11.606,12.1a.875.875,0,0,1-1.212,0L6.463,8.165A.857.857,0,1,0,5.251,9.377l3.93,3.931a2.571,2.571,0,0,0,3.637,0l3.931-3.931A.857.857,0,0,0,16.749,8.165Z" transform="translate(-5 -7.914)" fill="#7c929a"></path></svg>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- admin collapse nav -->
+                                <div class="admin_collapse_nav">
+                                    <!-- admin collapse nav -->
+                                    <ul class="sidebar_navList">
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./userpanel.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./profile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/profile.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./resume.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/view.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">View Resume</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editresume.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Resume</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./savejobs.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/save.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Save Jobs</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./applyjobs.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Apply Jobs</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./emailresume.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/email.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Emailed Resume</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="#" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/Logout.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Personal Resume</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Resume</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- resume tabs -->
+                    <div class="resume_tab">      
+                        <!-- button -->
+                        <button class="cvpopup_tabs_btn main_btn activeTab" id="resume_detailsbtn">Details View</button>
+                        <!-- button -->
+                        <button class="cvpopup_tabs_btn main_btn" id="resume_sortbtn">Short View</button>
+                        <!-- button -->
+                        <button class="cvpopup_tabs_btn main_btn" id="upload_resumeBtn">Upload Resume</button>
+                    </div>
+                    <!-- resume main -->
+                    <div class="resume_main" id="resume_details">
+                        <!-- admin container -->
+                        <div class="admin_container">
+                            <!-- resume top -->
+                            <div class="main_wrapper">                            
+                                <!-- complete resume -->
+                                <div class="resume_complete">
+                                    <!-- progress bar -->
+                                    <div class="resume_progress" id="resume_progress">
+                                        <span class="resume_progressvalue" id="resume_progressvalue">0%</span>
+                                    </div>
+                                    <!-- progress detaisl -->
+                                    <div class="resume_complete_details">
+                                        <!-- progress title -->
+                                        <h1 class="resume_complete_title">Completeness Your Resume</h1>
+                                        <!-- update date -->
+                                        <p class="resume_update_date">
+                                            <span>Last updated on:</span>
+                                            <span>21 Mar 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- resume edit btn -->
+                                <div class="resume_edit">
+                                    <!-- resume_edit_text -->
+                                    <p class="resume_edit_text">Edit Resume</p>
+                                    <!-- resume edit -->
+                                    <a href="./editresume.html" class="resume_edit_inner">
+                                        <img class="edit_icon" src="assets/image/admin/note.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- view resume -->
+                        <div class="view_resume">
+                            <!-- admin containen -->
+                            <div class="admin_container">
+                                <!-- resume profile -->
+                                <div class="resume_profile main_wrapper">
+                                    <!-- profile info -->
+                                    <div class="resume_profile_info">
+                                        <!-- profile name -->
+                                        <p class="resume_profile_name">Robert Merry</p>
+                                        <!-- info list -->
+                                        <ul class="resume_info_list">
+                                            <!-- info list item -->
+                                            <li class="resume_info_item">
+                                                <span>Address:</span>
+                                                <span>New Yourk, #208, USA</span>
+                                            </li>
+                                            <!-- info list item -->
+                                            <li class="resume_info_item">
+                                                <span>Phone:</span>
+                                                <span>017238299660</span>
+                                            </li>
+                                            <!-- info list item -->
+                                            <li class="resume_info_item">
+                                                <span>Email:</span>
+                                                <span>info@gmail.com</span>
+                                            </li>
+                                            <!-- info list item -->
+                                            <li class="resume_info_item">
+                                                <span>Designation:</span>
+                                                <span>Web Developer</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- image -->
+                                    <div class="resume_profile_image">
+                                        <img src="assets/image/team/t3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Career Objective:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table">
+                                        <p class="resume_table_text">To secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Career Summary:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table">
+                                        <p class="resume_table_text">I am Computer Engineer and have good command over languages like PHP with Laravel framework, HTML, CSS, Java Script, WordPress etc. I have experience in working with database. Good command over programme designing, development and experience in system level programming.I ampunctual and hardworking, have tendency to complete the assigned task within the framed time limit and good communication skills.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Special Qualification:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table">
+                                        <p class="resume_table_text">I have some special qualifications of Web development and designing like PHP with Laravel Framework, Graphics designing. I have experience in handling the project alone in the absence of seniors and Goal oriented with excellent technical skills.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Employment History:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Company Name</th>
+                                                    <th>Designation</th>
+                                                    <th>Duration</th>
+                                                    <th>Start Job</th>
+                                                    <th>End Job</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- tbody -->
+                                            <tbody>
+                                                <tr>
+                                                    <td>Code Linear</td>
+                                                    <td>Web Designer</td>
+                                                    <td>.6</td>
+                                                    <td>10-2-2021</td>
+                                                    <td>3-10-2023</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NGen It</td>
+                                                    <td>Web Designer</td>
+                                                    <td>2</td>
+                                                    <td>1-12-2022</td>
+                                                    <td>5-1-2025</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bongoit Ltd</td>
+                                                    <td>Frontend Developer</td>
+                                                    <td>2</td>
+                                                    <td>1-12-2022</td>
+                                                    <td>5-1-2025</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Application Information:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table resume_tableList">
+                                        <table>
+                                            <!-- tbody -->
+                                            <tbody>
+                                                <tr>
+                                                    <td>Available For</td>
+                                                    <td>: Full Time</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Present Salary</td>
+                                                    <td>: $1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Expected Salary</td>
+                                                    <td>: $1500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Job Category</td>
+                                                    <td>: Software</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Preferred Country</td>
+                                                    <td>: USA</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Academic Qualification:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Exam Title</th>
+                                                    <th>Subject</th>
+                                                    <th>Institute</th>
+                                                    <th>Pas.Year</th>
+                                                    <th>Duration</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- tbody -->
+                                            <tbody>
+                                                <tr>
+                                                    <td>Diploma Engineering</td>
+                                                    <td>CST</td>
+                                                    <td>Dinajpur Polytechnic Institute</td>
+                                                    <td>10-6-2022</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Personal Details :</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table resume_tableList">
+                                        <table>
+                                            <!-- tbody -->
+                                            <tbody>
+                                                <tr>
+                                                    <td>Father's Name</td>
+                                                    <td>: Jhon Cena</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mother's Name</td>
+                                                    <td>: Marina Star</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Date of Birth</td>
+                                                    <td>: March 1, 2001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gender</td>
+                                                    <td>: Male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Marital Status</td>
+                                                    <td>: Unmarried</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nationality</td>
+                                                    <td>: American</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>National Id No</td>
+                                                    <td>: 142584687541</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Religion</td>
+                                                    <td>: Islam</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Permanent Address</td>
+                                                    <td>:  New Yourk, #208, USA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Current Location</td>
+                                                    <td>: New York</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Specialization:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table skill_table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Specialization</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>HTML</li>
+                                                            <li>CSS</li>
+                                                            <li>Bootstrap</li>
+                                                            <li>Tailwind CSS</li>
+                                                            <li>SaaS</li>
+                                                            <li>JavaScript</li>
+                                                            <li>React</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        Web Developer (PHP with Laravel framework)
+                                                        Or, let Laravel serve as a robust backend API for your Next.js application, mobile application, or other frontend. Either way, our starter kits will have you productive in minutes.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- resume block -->
+                                <div class="resume_block">
+                                    <p class="resume_block_title">Reference:</p>
+                                    <!-- resume table -->
+                                    <div class="resume_table resume_tableList">
+                                        <table>
+                                            <!-- tbody -->
+                                            <tbody>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>: David Toren</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Organization</td>
+                                                    <td>: Meta</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Designation</td>
+                                                    <td>: Software Engineer</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Relation</td>
+                                                    <td>: Uncle</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- short view -->
+                    <div class="admin_container shortresume_content" id="resume_short">
+                        <div class="cvshort_view cvshort_viewuser">
+                            <!-- banner -->
+                            <div class="shortview_banner">
+                                <!-- banner content -->
+                                <div class="shortview_banner_content">
+                                    <!-- name -->
+                                    <p class="shortview_banner_name">Muhammad Hannan</p>
+                                    <!-- designation -->
+                                    <p class="shortview_banner_designation">Full stack developer</p>
+                                </div>
+                            </div>
+                            <!-- wrapper -->
+                            <div class="cvshort_view_wrapper">
+                                <!-- sidebar -->
+                                <div class="shortview_sidebar">
+                                    <!-- image -->
+                                    <div class="shortview_image">
+                                        <img src="assets/image/team/t3.jpg" alt="">
+                                    </div>
+                                    <!-- scope -->
+                                    <div class="shortview_scope">
+                                        <!-- scope title -->
+                                        <h3 class="shortview_scope_title">My Contact</h3>
+                                        <!-- contact information -->
+                                        <div class="shortview_list">
+                                            <ul>
+                                                <li>
+                                                    <img src="assets/image/admin/iphone.png" alt="">
+                                                    <span class="shortview_list_text">01723507989</span>
+                                                </li>
+                                                <li>
+                                                    <img src="assets/image/admin/mailinfo.png" alt="">
+                                                    <span class="shortview_list_text">info@gmail.com</span>
+                                                </li>
+                                                <li>
+                                                    <img src="assets/image/admin/address.png" alt="">
+                                                    <span class="shortview_list_text">New Yourk, #208, USA</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- scope -->
+                                    <div class="shortview_scope">
+                                        <!-- scope title -->
+                                        <h3 class="shortview_scope_title">Personal Information</h3>
+                                        <!-- contact information -->
+                                        <div class="shortview_list">
+                                            <ul>
+                                                <li>
+                                                    <span class="shortview_list_title">Fathers Name:</span>
+                                                    <span class="shortview_list_text">Jhon Cena</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Mothers Name:</span>
+                                                    <span class="shortview_list_text">Marina Star</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Date of Birth:</span> 
+                                                    <span class="shortview_list_text">March 1, 2001</span>
+                                                </li>
+                                                <li>   
+                                                    <span class="shortview_list_title">Gender:</span> 
+                                                    <span class="shortview_list_text">Male</span>
+                                                </li>
+                                                <li>   
+                                                    <span class="shortview_list_title">Marital Status: </span>
+                                                    <span class="shortview_list_text">Unmarried</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Nationality:</span> 
+                                                    <span class="shortview_list_text">American</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">National Id No:</span> 
+                                                    <span class="shortview_list_text">142584687541</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Religion:</span>
+                                                    <span class="shortview_list_text">Islam</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Permanent Address:</span> 
+                                                    <span class="shortview_list_text">New Yourk, #208, USA</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Current Location:</span> 
+                                                    <span class="shortview_list_text">New York</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- shortview_content -->
+                                <div class="shortview_content">
+                                    <!-- scope -->
+                                    <div class="shortview_scope">
+                                        <!-- scope title -->
+                                        <h3 class="shortview_scope_title">Expreince</h3>
+                                        <!-- contact information -->
+                                        <div class="shortview_list">
+                                            <!-- expreince job title -->
+                                            <p class="expreince_jobttile">Laravel Developer</p>
+                                            <ul>
+                                                <li>
+                                                    <span class="shortview_list_title">Experience:</span>
+                                                    <span class="shortview_list_text">3 months</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Company:</span>
+                                                    <span class="shortview_list_text">SEO Exparte Bangladesh</span>
+                                                </li>
+                                            </ul>
+                                            <!-- expreince job title -->
+                                            <p class="expreince_jobttile">React Developer</p>
+                                            <ul>
+                                                <li>
+                                                    <span class="shortview_list_title">Experience:</span>
+                                                    <span class="shortview_list_text">5 months</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Company:</span>
+                                                    <span class="shortview_list_text">Opedia</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- scope -->
+                                    <div class="shortview_scope">
+                                        <!-- scope title -->
+                                        <h3 class="shortview_scope_title">Skill</h3>
+                                        <!-- contact information -->
+                                        <div class="shortview_skilllist">
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Bootstrap</li>
+                                                <li>Tailwind CSS</li>
+                                                <li>SaaS</li>
+                                                <li>JavaScript</li>
+                                                <li>React</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- scope -->
+                                    <div class="shortview_scope">
+                                        <!-- scope title -->
+                                        <h3 class="shortview_scope_title">Educational Qualification</h3>
+                                        <!--  information -->
+                                        <div class="shortview_list">
+                                            <!--  title -->
+                                            <p class="expreince_jobttile">Computer Science &amp; Engineering</p>
+                                            <ul>
+                                                <li>
+                                                    <span class="shortview_list_title">Institute:</span>
+                                                    <span class="shortview_list_text">United International University</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Pass Year:</span>
+                                                    <span class="shortview_list_text">2018</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Subjuect:</span>
+                                                    <span class="shortview_list_text">Computer Science</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Result:</span>
+                                                    <span class="shortview_list_text">CGPA 3.56 (Out of 4)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- scope -->
+                                    <div class="shortview_scope">
+                                        <!-- scope title -->
+                                        <h3 class="shortview_scope_title">Reference</h3>
+                                        <!--  information -->
+                                        <div class="shortview_list">
+                                            <!--  title -->
+                                            <p class="expreince_jobttile">Chowdhury Mofizur Rahman</p>
+                                            <ul>
+                                                <li>
+                                                    <span class="shortview_list_title">Relation:</span>
+                                                    <span class="shortview_list_text">Relative</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Mobile No:</span>
+                                                    <span class="shortview_list_text">01782998660</span>
+                                                </li>
+                                            </ul>
+                                            <!--  title -->
+                                            <p class="expreince_jobttile">Md Billal</p>
+                                            <ul>
+                                                <li>
+                                                    <span class="shortview_list_title">Relation:</span>
+                                                    <span class="shortview_list_text">Cousin</span>
+                                                </li>
+                                                <li>
+                                                    <span class="shortview_list_title">Mobile No:</span>
+                                                    <span class="shortview_list_text">01985208897</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- upload resume -->
+                    <div class="admin_container uploadResume_content" id="upload_resume">
+                        <!-- upload resume -->
+                        <div class="upload_resume">
+                            <!-- form -->
+                            <div class="upload_resume_form">
+                                <form action="">
+                                    <!-- cv area -->
+                                    <div class="cv_area">
+                                        <!-- content -->
+                                        <div class="cvpreview_conten">
+                                            <img src="assets/image/icon/cv.png" alt="">
+                                            <p>Your Personalized Resume is not uploaded yet.</p>
+                                        </div>
+                                        <div id="pdf-preview" class="cv_area_preview"></div>
+                                    </div>
+                                    <!-- upload btn -->
+                                    <div class="social_icon_upload cv_upload">
+                                        <input type="file" id="pdf-file-input">
+                                        <span>Choose File</span>
+                                    </div>
+                                    <!-- button -->
+                                    <div class="resume_uploadBtn">
+                                        <button type="submit" class="main_btn global_btn btnHover">Upload File</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottom nav -->
+                <div class="bottom_nav">
+                    <!-- wrapper -->
+                    <ul class="bottom_navlist bottom_navPanel">
+                        <!-- list -->
+                        <li>
+                            <a>
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/Logout.png" alt="">
+                                </div>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/profile.png" alt="">
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image activeBottom">
+                                    <img src="assets/image/mobile/dahs.png" alt="">
+                                </div>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/view.png" alt="">
+                                </div>
+                                <span>Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="others_navbottom">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/others.png" alt="">
+                                </div>
+                                <span>Others</span>
+                            </a>
+                            <ul class="panel_others_list" id="others_navbList">
+                                <li>
+                                    <a href="./editprofile.html">
+                                        <img src="assets/image/mobile/note.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./applyjobs.html">
+                                        <img src="assets/image/mobile/applyjobs.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./editresume.html">
+                                        <img src="assets/image/mobile/note.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./savejobs.html">
+                                        <img src="assets/image/mobile/applyjobs.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="emailresume.html">
+                                        <img src="assets/image/mobile/email.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/progress.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- pdf js -->
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <!-- resume js -->
+        <script src="assets/js/resume.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>

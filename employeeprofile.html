@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./dashboard.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./employeeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Company Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./post.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Post a Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Job Post</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./allaplications.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">All Aplications</span>
+                                </a>
+                            </li>
+                          
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a href="./dashboard.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="">
+                                </a>
+                            </div>
+                       <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <!-- admin toggle -->
+                            <div class="admin_collopse admin_mobileCol" id="adminMobile">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint3.jpg" alt="">
+                                </div>
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">
+                                        <span>Super Admin</span>
+                                        <!-- icon -->
+                                        <span class="admin_collaps_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.147" viewBox="0 0 12 6.147">
+                                            <path class="cx_1630815321671_svg_icons" d="M16.749,8.165a.857.857,0,0,0-1.212,0L11.606,12.1a.875.875,0,0,1-1.212,0L6.463,8.165A.857.857,0,1,0,5.251,9.377l3.93,3.931a2.571,2.571,0,0,0,3.637,0l3.931-3.931A.857.857,0,0,0,16.749,8.165Z" transform="translate(-5 -7.914)" fill="#7c929a"></path></svg>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- admin collapse nav -->
+                                <div class="admin_collapse_nav">
+                                    <!-- admin collapse nav -->
+                                    <ul class="sidebar_navList">
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./dashboard.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./employeeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/profile.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Company Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./post.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/view.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Post a Jobs</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">View Job Post</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./allaplications.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/save.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">All Aplications</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="#" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/Logout.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Employee Profile</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Profile</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- admin main wrapper -->
+                    <div class="profile">
+                        <!-- profile_banner -->
+                        <div class="user_profile_banner">
+                            <!-- image -->
+                            <div class="user_banner_image">
+                                <img src="assets/image/team/aboutteam.jpg" alt="image" id="blah">
+                            </div>
+                            <!-- change banner -->
+                            <div class="user_banner_change">
+                                <input type="file" id="banner_changeInput">
+                                <!-- edit image -->
+                                <span>
+                                    <img src="assets/image/icon/edit.png" alt="image">
+                                </span>
+                            </div>
+                        </div>
+                        <!-- user profile info -->
+                        <div class="user_profile_info">
+                            <!-- user main -->
+                            <div class="user_profile_main">
+                                <!-- user profile image  -->    
+                                <div class="user_profile_image">
+                                    <img src="assets/image/icon/meta.png" alt="image" id="user">
+                                </div>
+                                <!-- user profile change -->
+                                <div class="user_profile_change user_banner_change">
+                                    <input type="file" id="userChange">
+                                    <!-- edit image -->
+                                    <span>
+                                        <img src="assets/image/icon/edit.png" alt="image">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- name -->
+                            <p class="user_profile_name">King Forest Soft</p>
+                            <!-- designation -->
+                            <p class="user_profile_designation">Software Company</p>
+                        </div>
+                        <!-- user profile contemt -->
+                        <div class="obout_user_details">
+                            <!-- user details wrapper -->
+                            <div class="user_details_wrapper main_wrapper">
+                                <!-- details left -->
+                                <div class="user_details_left">
+                                    <!-- name -->
+                                    <p class="obout_user_title">King Forest Soft</p>
+                                    <!-- text -->
+                                    <div class="obout_user_text">
+                                        <!-- text scope -->
+                                        <p class="obout_user_textScope">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, at, corrupti eum similique impedit distinctio pariatur reiciendis mollitia inventore quod quas obcaecati dolorum. Eligendi quas aspernatur in repudiandae. Facere, consequuntur.</p>
+                                        <!-- text scope -->
+                                        <p class="obout_user_textScope">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus, ratione corporis placeat quas officia temporibus minus autem ducimus recusandae odio, iure, animi ipsa modi minima labore fugiat reiciendis dolorem.</p>
+                                    </div>
+                                    <!-- about company image -->
+                                    <div class="company_gallery main_wrapper">
+                                        <!-- item -->
+                                        <div class="company_gallery_img">
+                                            <img src="assets/image/blog/blog1.jpg" alt="">
+                                        </div>
+                                        <!-- item -->
+                                        <div class="company_gallery_img">
+                                            <img src="assets/image/blog/blog2.jpg" alt="">
+                                        </div>
+                                        <!-- item -->
+                                        <div class="company_gallery_img">
+                                            <img src="assets/image/blog/blog3.jpg" alt="">
+                                        </div>
+                                        <!-- item -->
+                                        <div class="company_gallery_img">
+                                            <img src="assets/image/blog/blog4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- text -->
+                                    <div class="obout_user_text">
+                                        <!-- text scope -->
+                                        <p class="obout_user_textScope">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, at, corrupti eum similique impedit distinctio pariatur reiciendis mollitia inventore quod quas obcaecati dolorum. Eligendi quas aspernatur in repudiandae. Facere, consequuntur.</p>
+                                        <!-- text scope -->
+                                        <p class="obout_user_textScope">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus, ratione corporis placeat quas officia temporibus minus autem ducimus recusandae odio, iure, animi ipsa modi minima labore fugiat reiciendis dolorem.</p>
+                                    </div>
+                                    <!-- job post -->
+                                    <div class="companyp_job_post">
+                                        <!-- title -->
+                                        <p class="obout_user_title">Job Post</p>
+                                        <!-- hob post item -->
+                                        <div class="job_post">
+                                            <!-- job category -->
+                                            <a href="./jobpost.html" class="jobPost_category success">Software Engineer</a>
+                                            <!-- job title -->
+                                            <h2 class="jobpost_title">
+                                                <a href="./jobdetails.html">Frontend Developer For Google</a>
+                                            </h2>
+                                            <!-- jobpost descreption -->
+                                            <div class="jobPost_descreption">
+                                                <!-- list -->
+                                                <ul class="jobPost_descreption_list">
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- location icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/location.png" alt="location">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Canada, Begumpara</span>
+                                                    </li>
+                
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- time icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/timeicon.png" alt="image">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Full Time</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                
+                                            <!-- footer -->
+                                            <div class="jobpost_footer">
+                                                <!-- jobpost author -->
+                                                <div class="job_postauthor">
+                                                    <!-- image -->
+                                                    <div class="postauthor_image">
+                                                        <img src="assets/image/icon/google.png" alt="image">
+                                                    </div>
+                                                    <!-- postauthor name -->
+                                                    <p class="postauthor_name">Google</p>
+                                                </div>
+                                                <!-- job settime -->
+                                                <p class="job_settime">26 Mar,2023</p>
+                                            </div>
+                                        </div>
+                                        <!-- hob post item -->
+                                        <div class="job_post">
+                                            <!-- job category -->
+                                            <a href="./jobpost.html" class="jobPost_category success">Software Engineer</a>
+                                            <!-- job title -->
+                                            <h2 class="jobpost_title">
+                                                <a href="./jobdetails.html">Frontend Developer For Google</a>
+                                            </h2>
+                                            <!-- jobpost descreption -->
+                                            <div class="jobPost_descreption">
+                                                <!-- list -->
+                                                <ul class="jobPost_descreption_list">
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- location icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/location.png" alt="location">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Canada, Begumpara</span>
+                                                    </li>
+                
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- time icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/timeicon.png" alt="image">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Full Time</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                
+                                            <!-- footer -->
+                                            <div class="jobpost_footer">
+                                                <!-- jobpost author -->
+                                                <div class="job_postauthor">
+                                                    <!-- image -->
+                                                    <div class="postauthor_image">
+                                                        <img src="assets/image/icon/google.png" alt="image">
+                                                    </div>
+                                                    <!-- postauthor name -->
+                                                    <p class="postauthor_name">Google</p>
+                                                </div>
+                                                <!-- job settime -->
+                                                <p class="job_settime">26 Mar,2023</p>
+                                            </div>
+                                        </div>
+                                        <!-- hob post item -->
+                                        <div class="job_post">
+                                            <!-- job category -->
+                                            <a href="./jobpost.html" class="jobPost_category success">Software Engineer</a>
+                                            <!-- job title -->
+                                            <h2 class="jobpost_title">
+                                                <a href="./jobdetails.html">Frontend Developer For Google</a>
+                                            </h2>
+                                            <!-- jobpost descreption -->
+                                            <div class="jobPost_descreption">
+                                                <!-- list -->
+                                                <ul class="jobPost_descreption_list">
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- location icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/location.png" alt="location">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Canada, Begumpara</span>
+                                                    </li>
+                
+                                                    <!-- item -->
+                                                    <li class="jobPost_descreption_item">
+                                                        <!-- time icon -->
+                                                        <span class="jobpost_list_icon">
+                                                            <img src="assets/image/icon/timeicon.png" alt="image">
+                                                        </span>
+                                                        <!-- text -->
+                                                        <span class="job_desgination_text">Full Time</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                
+                                            <!-- footer -->
+                                            <div class="jobpost_footer">
+                                                <!-- jobpost author -->
+                                                <div class="job_postauthor">
+                                                    <!-- image -->
+                                                    <div class="postauthor_image">
+                                                        <img src="assets/image/icon/google.png" alt="image">
+                                                    </div>
+                                                    <!-- postauthor name -->
+                                                    <p class="postauthor_name">Google</p>
+                                                </div>
+                                                <!-- job settime -->
+                                                <p class="job_settime">26 Mar,2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- details right -->
+                                <div class="user_details_right">
+                                    <!-- info -->
+                                    <div class="about_user_info">
+                                        <!-- about user title -->
+                                        <p class="obout_user_title">Company Info:</p>
+                                        <!-- about info list -->
+                                        <div class="personal_info">
+                                            <!-- list -->
+                                            <ul class="personal_info_list">
+                                                <!-- item -->
+                                                <li class="personal_info_item">
+                                                    <!-- info wrapper -->
+                                                    <p class="personal_info_wrapper">
+                                                        <img class="personal_info_icon" src="assets/image/admin/caldob.png" alt="">
+                                                        <span class="personal_info_title">Industry:</span>
+                                                    </p>
+                                                    <span class="personal_infotext">Software Company</span>
+                                                </li>
+                                                <!-- item -->
+                                                <li class="personal_info_item">
+                                                    <!-- info wrapper -->
+                                                    <p class="personal_info_wrapper">
+                                                        <img class="personal_info_icon" src="assets/image/admin/mailinfo.png" alt="">
+                                                        <span class="personal_info_title">Email:</span>
+                                                    </p>
+                                                    <span class="personal_infotext">dev@gmail.com</span>
+                                                </li>
+                                                <!-- item -->
+                                                <li class="personal_info_item">
+                                                    <!-- info wrapper -->
+                                                    <p class="personal_info_wrapper">
+                                                        <img class="personal_info_icon" src="assets/image/admin/iphone.png" alt="">
+                                                        <span class="personal_info_title">Phone:</span>
+                                                    </p>
+                                                    <span class="personal_infotext">01725858712</span>
+                                                </li>
+                                                <!-- item -->
+                                                <li class="personal_info_item">
+                                                    <!-- info wrapper -->
+                                                    <p class="personal_info_wrapper">
+                                                        <img class="personal_info_icon" src="assets/image/admin/address.png" alt="">
+                                                        <span class="personal_info_title">Address:</span>
+                                                    </p>
+                                                    <span class="personal_infotext">Dhaka,Bangladesh</span>
+                                                </li>
+                                                <!-- item -->
+                                                <li class="personal_info_item">
+                                                    <!-- info wrapper -->
+                                                    <p class="personal_info_wrapper">
+                                                        <img class="personal_info_icon" src="assets/image/admin/mapearth.png" alt="">
+                                                        <span class="personal_info_title">City:</span>
+                                                    </p>
+                                                    <span class="personal_infotext">Dhaka</span>
+                                                </li>
+                                                <!-- item -->
+                                                <li class="personal_info_item">
+                                                    <!-- info wrapper -->
+                                                    <p class="personal_info_wrapper">
+                                                        <img class="personal_info_icon" src="assets/image/admin/earth.png" alt="">
+                                                        <span class="personal_info_title">Country:</span>
+                                                    </p>
+                                                    <span class="personal_infotext">Bangladesh</span>
+                                                </li>
+                                                <li class="personal_info_social">
+                                                    <span class="personal_info_title">Social:</span>
+                                                    <!-- user social -->
+                                                    <div class="user_social">
+                                                        <ul class="team_social_list">
+                                                            <!-- item -->
+                                                            <li class="team_social_list_item">
+                                                                <a href="#">
+                                                                    <img src="assets/image/icon/faceb.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <!-- item -->
+                                                            <li class="team_social_list_item">
+                                                                <a href="#">
+                                                                    <img src="assets/image/icon/twit.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <!-- item -->
+                                                            <li class="team_social_list_item">
+                                                                <a href="#">
+                                                                    <img src="assets/image/icon/linked.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <!-- item -->
+                                                            <li class="team_social_list_item">
+                                                                <a href="#">
+                                                                    <img src="assets/image/icon/instag.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- bottom nav -->
+             <div class="bottom_nav">
+                <!-- wrapper -->
+                <ul class="bottom_navlist bottom_navPanel">
+                    <!-- list -->
+                    <li>
+                        <a>
+                            <div class="bottom_navlist_image bottom_paneNav_image">
+                                <img src="assets/image/mobile/Logout.png" alt="">
+                            </div>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                            <div class="bottom_navlist_image bottom_paneNav_image">
+                                <img src="assets/image/mobile/profile.png" alt="">
+                            </div>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                            <div class="bottom_navlist_image bottom_paneNav_image activeBottom">
+                                <img src="assets/image/mobile/dahs.png" alt="">
+                            </div>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pricing.html">
+                            <div class="bottom_navlist_image bottom_paneNav_image">
+                                <img src="assets/image/mobile/applyjobs.png" alt="">
+                            </div>
+                            <span>Jobs Post</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="others_navbottom">
+                            <div class="bottom_navlist_image bottom_paneNav_image">
+                                <img src="assets/image/mobile/others.png" alt="">
+                            </div>
+                            <span>Others</span>
+                        </a>
+                        <ul class="panel_others_list" id="others_navbList">
+                            <li>
+                                <a href="./allaplications.html">
+                                    <img src="assets/image/mobile/save.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./eviewjobpost.html">
+                                    <img src="assets/image/mobile/view.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/profile.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>

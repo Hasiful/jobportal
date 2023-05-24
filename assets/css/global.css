@@ -1,0 +1,459 @@
+/* global css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+a:focus{
+    border: 1px dotted var(--mainColor);
+}
+ul{
+    list-style: none;
+}
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* input global class */
+.input_control{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+/* select icon change */
+select,
+.main_banner_searchInput {
+    appearance: none;
+    background: url(../image/chevron.png) !important;
+    background-size: auto !important;
+    background-position: 90% 50% !important;
+    background-repeat: no-repeat !important;
+    padding-right: 20px !important;
+}
+
+/* btn class */
+.main_btn{
+    border: none;
+    background: transparent;
+}
+/* section padding */
+.section_padding{
+    padding: 30px 0px;
+}
+
+/* btn hover global */
+.btnHover{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btnHover::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: var(--textColor);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.btnHover:hover::after{
+    left: 0px;
+}
+
+/* container */
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+/* selection color change */
+::selection{
+    background: var(--textColor);
+    color: var(--globalColor);
+}
+
+/* html shooth */
+html{
+    scroll-behavior: smooth;
+}
+
+/* section title */
+
+.section_titlle {
+    max-width: 580px;
+    width: 100%;
+    margin: 0px auto 45px;
+    overflow: hidden;
+}
+
+.sectitle_heading {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px;
+    color: var(--textColor);
+}
+
+.sectitle_headingSub{
+    color: var(--mainColor);
+}
+
+.sectitle_text {
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* color variable */
+:root{
+    --mainColor:#26c644;
+    /* --mainColor:#26ae61; */
+    /* --mainColor:#3C65F5; */
+    --primaryColor: #7c929a;
+    --rating: #F7B300;
+    --textColor: #1E272E;
+    --bgColor: #F6F9FC;
+    --globalColor: #FFFFFF;
+    --dangerBg: #fff5f8;
+    --dangerColor: #f1416c;
+    --trustColor: #06a0f7;
+    --trustBg: #f1faff;
+    --mediumBg : #f8f5ff;
+    --mediumColor: #7239ea;
+    --successBg: rgb(16 123 255 / 10%);
+    --successColor: #107bff;
+    --LowColor: #111a4d;
+    --LowBg: #e5eef7;
+    --borderColor: 1px solid rgb(30 39 46 / 10%);
+    --transition: 0.3s linear all;
+}
+
+/* MB 15PX */
+.mar-b{
+    margin-bottom: 15px;
+}
+
+/* color class */
+
+.danger{
+    color: var(--dangerColor);
+    background: var(--dangerBg);
+}
+
+.trust{
+    color: var(--trustColor);
+    background: var(--trustBg);
+}
+
+.medium{
+    color: var(--mediumColor);
+    background: var(--mediumBg);
+}
+
+.success{
+    color: var(--successColor);
+    background: var(--successBg);
+}
+
+.low{
+    color: var(--LowColor);
+    background: var(--LowBg);
+}
+
+/* toggole btn */
+
+.toggle_nav {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+
+.toggle_nav {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 9;
+    right: 20px;
+    top: 24px;
+}
+    
+.toggle_nav ul,
+.admin_collopse ul {
+    position: relative;
+    height: 16px;
+    width: 25px;
+}
+
+.toggle_nav ul li,
+.admin_collopse ul li{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--mainColor);
+    left: 0px;
+    transition: var(--transition);
+}
+
+.toggle_nav ul li:first-child,
+.admin_collopse ul li:first-child{
+    top: 0px;
+}
+
+.toggle_nav ul li:nth-child(2),
+.admin_collopse ul li:nth-child(2){
+    top: 50%;
+}
+
+.toggle_nav ul li:last-child,
+.admin_collopse ul li:last-child {
+    top: 98%;
+}
+
+.activeToggle ul li:first-child,
+.activeColapse ul li:first-child{
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.activeToggle ul li:nth-child(2),
+.activeColapse ul li:nth-child(2){
+    visibility: hidden;
+    opacity: 0;
+}
+
+.activeToggle ul li:last-child,
+.activeColapse ul li:last-child{
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+/* custom slick slider */
+
+.employer_slider .slick-prev, .employer_slider .slick-next,
+.news_section .slick-prev, .news_section .slick-next{
+    z-index: 9;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: var(--bgColor);
+    z-index: 1;
+}
+
+.employer_slider .slick-next:before,
+.employer_slider .slick-prev:before,
+.news_section .slick-prev:before, 
+.news_section .slick-next:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 2px;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid var(--mainColor);
+    border-right: 2px solid transparent;
+    transform: rotate(135deg);
+}
+
+.employer_slider .slick-prev:before,
+.news_section .slick-prev:before {
+    transform: rotate(-45deg);
+    margin-left: 2px;
+    margin-right: 0px;
+}
+
+.employer_slider .slick-prev,
+.news_section .slick-prev{
+    top: -25px;
+    left: 0px;
+    right: auto;
+}
+
+.news_section .slick-next,
+.employer_slider .slick-next{
+    top: -25px;
+    right: 0px;
+    left: auto;
+}
+
+/* slick slider custom cahnge */
+
+/* breacrum global css */
+
+.breadcrumb_cover{
+    background: var(--bgColor);
+}
+
+.breadcrumb_title{
+    max-width: 700px;
+    width: 100%;
+    margin: 0px;
+}
+
+.breadcrumb_title .sectitle_heading,
+.breadcrumb_title .sectitle_text{
+    text-align: left;
+}
+/* input type time use our design */
+
+input[type=date]::-webkit-datetime-edit{
+    color: transparent;
+}
+
+input[type=date]:valid::-webkit-datetime-edit,
+input[type=date]:focus::-webkit-datetime-edit {
+    color: var(--primaryColor);
+    appearance: none;
+    display: block;
+}
+
+
+/* radio btn */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 17px;
+    display: inline-block;
+    color: var(--primaryColor);
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: var(--borderColor);
+    border-radius: 100%;
+    background: var(--globalColor);
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--mainColor);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    transition: var(--transition);
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.popup_main {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgb(246 249 252 / 60%);
+    z-index: 999;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition);
+    max-width: 600px;
+    width: 100%;
+}
+
+.jobprocess_step_popup{
+    background: var(--globalColor);
+    box-shadow: 0 5px 30px rgba(0,0,0,.1);
+    padding: 30px 20px;
+    border-radius: 6px;
+    height: 50vh;
+}
+
+.jobprocess_steppop_content{
+    overflow-y: auto;
+    height: 100%;
+}
+
+.popup_close,
+.popup_closecv{
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border-radius: 50%;
+    background: var(--mainColor);
+    display: grid;
+    place-content: center;
+    margin-bottom: 15px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.popup_close img,
+.popup_closecv img{
+    width: 20px;
+}

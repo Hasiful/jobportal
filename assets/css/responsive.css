@@ -1,0 +1,917 @@
+@media(min-width: 576px){
+    .application_action {
+        justify-content: center;
+    }
+
+    .post_jobs_left {
+        width: 65%;
+    }
+
+    .post_jobs_count,
+    .post_jobs_action {
+        width: 35%;
+        text-align: center;
+    }
+
+    .appcard_education,
+    .appcard_action,
+    .appcard_expreince,
+    .appcard_info
+    {
+        width: 50%;
+        padding: 20px 15px;
+    }
+
+    .selectlist {
+        left: -20px;
+    }
+
+    .pricing_content {
+        padding: 70px 50px;
+    }
+
+    .post_jobs_action button {
+        width: 140px;
+    }
+
+    .main_banner_searchInput{
+        background-position: 90% 50% !important; 
+    }
+
+    .main_banner_search_wrapper{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main_banner_searchInner::after{
+        width: 2px;
+    }
+
+    .main_banner_searchInput{
+        border-bottom: unset;
+    }
+
+    .main_banner_searchBtn{
+        margin-left: 20px;
+    }
+
+    .category_item{
+        width: calc(50% - 12px);
+    }
+
+    .count_item{
+        width: calc(50% - 12px);
+    }
+
+    .job_location_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter_form{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .newsletter_inputInner{
+        width: calc(100% - 110px);
+        border: unset;
+    } 
+    
+    .footer_col {
+        width: calc(33.33% - 16px);
+    }
+
+    .footer_col:last-child {
+        width: 64.33%;
+    }
+
+    .innerBanner_heading{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .team_card{
+        width: calc(50% - 12px);
+    }
+
+    .form_content {
+        padding: 40px 30px;
+    }
+
+    .form_heading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .form_text {
+        font-size: 16px;
+    }
+    .user_overview_box {
+        width: calc(50% - 12px);
+    }
+    .user_skill_inner {
+        width: calc(50% - 12px);
+    }
+    .admnin_content {
+        padding: 20px;
+    }
+
+    .obout_user_details {
+        padding: 20px;
+    }
+    .expreince_inner_info {
+        width: calc(100% - 104px);
+    }
+    .personal_info_item {
+        flex-direction: row;
+    }
+    .company_gallery_img {
+        width: calc(25% - 9px);
+    }
+
+    .gallary_image_upload {
+        width: calc(50% - 12px);
+    }
+    .post_jobs_item {
+        padding: 30px 20px;
+    }
+    .job_process_devide::after {
+        display: block;
+    }
+
+    .job_process_wrapper {
+        justify-content: flex-start;
+    }
+    .process_right{
+        margin: 0;
+    }
+
+    .advance_filter_itemContent {
+        padding: 10px;
+    }
+
+    .filter_item_text {
+        font-size: 16px;
+    }
+
+    .filter_input_divide .filter_input_inner {
+        width: calc(50% - 12px);
+        margin: 0px;
+    }
+
+    .jobprocess_steppop_item {
+        width: calc(50% - 6px);
+    }
+
+    .search_select::after{
+        display: block;
+    }
+    .post_jobs_left {
+        flex-direction: row;
+    }
+
+    .job_overview_list li {
+        width: calc(50% - 12px);
+    }
+
+    .admin_info{
+        display: block;
+    }
+    .admin_table table tr td {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 768px){
+
+    .admin_header_left {
+        gap: 100px;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .admin_mobileCol{
+        display: none !important;
+    }
+
+    .active .job_process_toltip {
+        display: block;
+    }
+    .section_padding{
+        padding: 40px 0px;
+    }
+    .banner_section {
+        padding-top: 118px;
+    }
+
+    .sectitle_text {
+        font-size: 18px;
+    }
+
+    .sectitle_heading {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .section_titlle {
+        margin: 0px auto 50px;
+    }
+
+    .category_item{
+        width: calc(33.33% - 16px);
+    }
+
+    .count_value{
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .employer_item{
+        width: calc(50% - 12px);
+    }
+
+    .footer_col {
+        width: calc(25% - 18px);
+    }
+
+    .blog_item{
+        margin: 0px 12px;
+    }
+    .blog_image {
+        height: 260px;
+    }
+    .innerBanner_heading{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .grid_view .job_post{
+        width: calc(50% - 12px);
+    }
+    .pricing_card{
+        width: calc(50% - 12px);
+    }
+    
+    .contact_input_inner{
+        width: calc(50% - 12px);
+    }
+    
+    .contact_input_inner:last-child{
+        width: 100%;
+    }
+
+    .contact_details {
+        padding: 30px 20px;
+    }
+
+    .contact_title{
+        margin-bottom: 40px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .contact_info_title {
+        font-size: 22px;
+    }
+
+    .contact_info_text, .contact_info_text a {
+        font-size: 16px;
+    }
+    .sidebar {
+        width: 255px;
+        left: 0px;
+        transition: 0.2s;
+    }
+    .admin_main {
+        width: calc(100% - 255px);
+        margin-left: 255px;
+    }   
+    .sidebar_nav {
+        padding: 0px 15px;
+    } 
+    .admin_collopse{
+        display: grid;
+    }
+    .expreince_compnay_image img{
+        width: 50px;
+    } 
+    .edit_form_wrapper .form_input_inner{
+        width: calc(50% - 12px);
+    } 
+    
+    .add_expreince {
+        width: calc(50% - 12px);
+    }
+
+    .add_socila_icon {
+        width: calc(50% - 12px);
+    }
+
+    .skill_inner .form_input_inner {
+        width: calc(100% - 62px);
+    }
+
+    .process_info{
+        text-align: end;
+    }
+
+    .filter_form_inner{
+        width: calc(50% - 12px);
+    }
+
+    .shortview_image {
+        margin-top: -160px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .shortview_banner_content {
+        width: 60%;
+        margin-left: auto;
+        text-align: left;
+    }
+
+    .shortview_banner_name {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .shortview_banner_designation {
+        font-size: 24px;
+    }
+
+    .shortview_content {
+        width: 60%;
+    }
+
+    .shortview_sidebar {
+        width: 40%;
+    }
+    .cvpopup_tabs_btn{
+        padding: 9px 25px;
+        font-size: 16px;
+    }
+    .cvpopup_tabs{
+        gap: 12px;
+    }
+    .admin_pagetitle{
+        font-size: 28px;
+        line-height: 36px;
+    }
+  
+    .user_banner_image {
+        height: 300px;
+    }
+    .obout_user_title, .admin_table_title {
+        font-size: 22px;
+    }
+
+    .job_desgination_text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .admin_block .similarjob_image {
+        width: 40px;
+        height: 40px;
+    }
+    .inner_banner_content::before {
+        display: block;
+    }
+
+    .employer_slider .slick-prev,
+    .news_section .slick-prev {
+        top: -50px;
+        right: 50px !important;
+        left: auto !important;
+    }
+
+    .employer_slider .slick-next, .news_section .slick-next {
+        top: -50px;
+    }
+
+    .employer_slider .slick-prev,
+    .employer_slider .slick-next,
+    .news_section .slick-prev,
+    .news_section .slick-next {
+        height: 40px;
+        width: 40px;
+    }
+
+    .notificationbox{
+        right: 0px;
+        top: 100%;
+        left: auto;
+        transform: unset;
+    }
+
+    .section_titlle {
+        margin: 0px auto 30px;
+    }
+
+}
+
+@media(min-width: 991px){
+    .sidebar {
+        height: 100vh;
+    }
+
+    .admnin_content{
+        margin-bottom: 0px;
+    }
+
+    .admin_table tr{
+        background: transparent;
+    }
+    
+
+    .paginate_list li a{
+        font-size: 22px;
+    }
+
+    .prev_peginate a,
+    .next_peginate a {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .admin_table table .tranding_news_wrapper {
+        flex-direction: row;
+    }
+    
+    .admin_table table .tranding_news_details{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .admin_table table .trending_newsdate p{
+        font-size: 16px;
+    }
+    
+    .admin_table table .tranding_news_title{
+        font-size: 16px;
+    }
+    
+    .admin_table table tr td {
+        padding: 20px 30px;
+        display: revert;
+        background: var(--bgColor);
+    }
+
+    .admin_table thead{
+        display: contents;
+    }
+
+    .admin_table table tr td::after{
+        display: none;
+    }
+
+    .admin_table table tr th:last-child,
+    .admin_table table tr td:last-child{
+        border-radius: 0px 12px 12px 0px;
+    }
+
+    .admin_table table tr th:first-child,
+    .admin_table table tr td:first-child{
+        border-radius: 12px 0px 0px 12px;
+    }
+
+    .add_jobprocessBtn button {
+        padding: 5px 20px;
+    }
+
+    .job_process_devide::after {
+        height: 22px;
+        width: 20px;
+    }
+
+    .add_jobprocessBtn img {
+        width: 24px;
+    }
+
+    .job_process_boxmain {
+        padding: 0px 20px;
+    }
+
+    .job_process_boxcount{
+        height: 64px;
+        width: 64px;
+        font-size: 18px;
+    }
+
+    .job_process_boxtitle {
+        font-size: 16px;
+    }
+    .jobposts_process_status{
+        width: unset;
+    }
+
+    .process_infobox {
+        display: inline-block;
+    }
+
+    .process_content{
+        width: calc(100% - 304px);
+    }
+
+    .process_action {
+        justify-content: flex-end;
+    }
+
+    .process_info{
+        width: 304px;
+    }
+
+    .appcard_education,
+    .appcard_action,
+    .appcard_expreince,
+    .appcard_info
+    {
+        width: 25%;
+        padding: 20px 15px;
+    }
+
+    .section_padding{
+        padding: 50px 0px;
+    }
+
+    .banner_section {
+        padding-top: 128px;
+    }
+
+    .main_header{
+        padding: 0px;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_btnWrapper{
+        display: flex;
+    }
+
+    .toggle_nav{
+        display: none;
+    }
+
+    .header_profile_image {
+        margin-right: 0px;
+    }
+
+    .banner_wrapper{
+        flex-direction: row;
+    }
+    
+    .banner_content{
+        width: calc(60% - 2%);
+    }
+
+    .banner_box{
+        width: calc(40% - 10%);
+        min-height: 500px;
+    }
+
+    .main_heading {
+        font-size: 54px;
+        line-height: 64px;
+        text-align: left;
+    }
+
+    .sub_text{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .sectitle_heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .category_item{
+        width: calc(25% - 18px);
+    }
+
+    .job_post{
+        width: calc(50% - 12px);
+    }
+
+    .focus_subheading {
+        text-align: left;
+    }
+
+    .main_heading_custom {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .image_box{
+        width: calc(50% - 3%);
+    }
+    
+    .content_wrapper{
+        width: calc(50% - 5%);
+    }
+
+    .btn_wrapper{
+        justify-content: flex-start;
+    }
+
+    .count_item{
+        width: calc(25% - 18px);
+    }
+
+    
+    .job_location_wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer_col{
+        width: calc(17% - 18px);
+    }
+
+    .footer_col:first-child, .footer_col:last-child {
+        width: calc(24% - 17px);
+    }
+
+    .newsletter_content {
+        padding: 60px 20px 80px 20px;
+    }
+
+    .filter_wrapper{
+        flex-direction: row;
+    }
+    
+    .filter_sidebar{
+        width: 320px;
+        position: sticky;
+        top: 100px;
+    }
+
+    .filter_body{
+        width: calc(100% - 344px);
+    }
+
+    .blog_wrapper{
+        flex-direction: row;
+    }
+    
+    .main_blog{
+        width: calc(100% - 424px);
+    }
+    
+    .news_sidebar{
+        width: 400px;   
+        position: sticky;
+        top: 100px;
+    }
+
+    .main_blog_wrapper .blog_item{
+        width: 100%;
+    }
+
+    .about_us_thumb,
+    .about_us_content{
+        width: calc(50% - 12px);
+    }
+
+    .team_card{
+        width: calc(33.33% - 16px);
+    }
+    .contact_details {
+        width: calc(40% - 12px);
+    }
+    .contact_form{
+        width: calc(60% - 12px);
+    }
+
+    .job_post_details{
+        width: calc(100% - 424px);
+    }
+    
+    .job_post_sidebar {
+        width: 400px;
+        position: sticky;
+        top: 100px;
+    }
+
+    .user_overview_box {
+        width: calc(33.33% - 16px);
+    }
+    .gallary_image_upload {
+        width: calc(25% - 18px);
+    }
+
+    .application_item {
+        width: calc(50% - 12px);
+    }
+
+    .job_step_select {
+        width: calc(33.33% - 16px);
+    }
+    
+    .job_step_selectinner .job_step_select{
+        width: calc(50% - 12px);
+    }
+
+    .job_poststep {
+        padding: 50px 30px;
+    }
+
+    .shortview_content {
+        padding: 50px;
+    }
+
+    .shortview_sidebar {
+        padding: 50px;
+    }
+
+    .footer_col{
+        text-align: left;
+    }
+
+    .header_logo {
+        width: 150px;
+    }
+    .user_profile_image {
+        height: 120px;
+        width: 120px;
+    }
+
+    .user_profile_change {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .user_profile_change img{
+        width: 20px;
+    }
+    .user_banner_change {
+        height: 40px;
+        width: 40px;
+    }
+
+    .user_banner_change img{
+        width: 30px !important;
+    }
+
+    .job_single {
+        margin-top: 78px;
+    }   
+    .section_titlle{
+        max-width: 980px;
+    }
+    .bottom_nav {
+        display: none;
+    }
+
+    .post_jobs_left {
+        width: 40%;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .post_jobs_count {
+        width: 30%;
+    }
+    .post_jobs_action {
+        width: 25%;
+    }
+}
+
+@media(min-width: 1240px){
+
+    .admin_table table .tranding_news_details{
+        width: calc(100% - 92px);
+    }
+
+    .admin_table table .similarjob_image{
+        width: 50px;
+    }
+
+    .jobposts_process_status{
+        padding: 10px 20px;
+    }
+
+    .job_status_processtitle,
+    .job_status_processtext {
+        font-size: 16px;
+    }
+
+    .appcard_info{
+        width: 25%;
+    }
+    .appcard_education{
+        width: 20%;
+        background: transparent;
+    }
+    
+    .appcard_expreince{
+        width: 25%;
+    }
+    
+    .appcard_action{
+        width: 15%;
+    }
+
+    .appcard_profile{
+        width: 15%;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_navItem {
+        padding: 23px 15px;
+    }
+
+    .banner_section {
+        padding-top: 138px;
+    }
+
+    .category_item{
+        width: calc(20% - 20px);
+    }
+
+    .main_heading_custom {
+        font-size: 54px;
+        line-height: 64px;
+    }
+
+    .focus_subheading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .count_value{
+        font-size: 54px;
+        line-height: 64px;
+    }
+
+    .employer_item{
+        width: calc(33.33% - 16px);
+    }
+
+    .job_location_wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .job_location_item:nth-child(2){
+        grid-column: span 2;
+    }
+    
+    .job_location_item:nth-child(4){
+        grid-column: span 2;
+    }
+
+    .pricing_card {
+        width: calc(33.33% - 16px);
+        padding: 30px 20px;
+    }
+    .main_blog_wrapper .blog_item{
+        width: calc(50% - 12px);
+    }
+
+    .team_card{
+        width: calc(25% - 18px);
+        border: var(--borderColor);
+        border-radius: 12px;
+    }
+
+    .job_overview_designation,
+    .job_overview_title  {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .admin_left{
+        width: calc(70% - 12px);
+    }
+    
+    .admin_right{
+        width: calc(30% - 12px);
+    }
+
+    .user_details_right {
+        width: calc(40% - 12px);
+        position: sticky;
+        top: 100px;
+    }
+    .user_details_left{
+        width: calc(60% - 12px);
+    }
+
+    .skill_inner {
+        width: calc(50% - 12px);
+    }
+
+    .post_jobs_left {
+        width: 20%;
+    }
+    
+    .post_jobs_count,
+    .post_jobs_action{
+        width: 16%;
+    }
+}

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./dashboard.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./employeeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Company Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./post.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Post a Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Job Post</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./allaplications.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">All Aplications</span>
+                                </a>
+                            </li>
+                          
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a href="./dashboard.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="">
+                                </a>
+                            </div>
+                       <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <!-- admin toggle -->
+                            <div class="admin_collopse admin_mobileCol" id="adminMobile">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint3.jpg" alt="">
+                                </div>
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">
+                                        <span>Super Admin</span>
+                                        <!-- icon -->
+                                        <span class="admin_collaps_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.147" viewBox="0 0 12 6.147">
+                                            <path class="cx_1630815321671_svg_icons" d="M16.749,8.165a.857.857,0,0,0-1.212,0L11.606,12.1a.875.875,0,0,1-1.212,0L6.463,8.165A.857.857,0,1,0,5.251,9.377l3.93,3.931a2.571,2.571,0,0,0,3.637,0l3.931-3.931A.857.857,0,0,0,16.749,8.165Z" transform="translate(-5 -7.914)" fill="#7c929a"></path></svg>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- admin collapse nav -->
+                                <div class="admin_collapse_nav">
+                                    <!-- admin collapse nav -->
+                                    <ul class="sidebar_navList">
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./dashboard.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./employeeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/profile.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Company Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./post.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/view.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Post a Jobs</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">View Job Post</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./allaplications.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/save.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">All Aplications</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="#" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/Logout.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">View Job Post</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">View-job</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- compnay job post -->
+                    <div class="admin_container">
+                        <!-- search header -->
+                        <div class="filter_header">
+                            <!-- main wrapper -->
+                            <div class="main_wrapper">
+                                <!-- total job -->
+                                <div class="filter_search">
+                                    <form action="#" class="blog_search_inner">
+                                        <!-- input -->
+                                        <input type="text" class="input_control blogsearch_input" placeholder="Search By title">
+                                        <!-- icon -->
+                                        <button type="submit" class="blogsearch_icon main_btn">
+                                            <svg class="cx_1630815321671header_icon_size cx_1630815321671_primary_search_icon" id="Search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 20 20"> <path class="cx_1630815321671_svg_icons" id="Search-2" data-name="Search" d="M19.724,18.547,14.757,13.58a8.336,8.336,0,1,0-1.177,1.177l4.968,4.968a.832.832,0,1,0,1.177-1.177ZM8.317,14.975a6.658,6.658,0,1,1,6.658-6.658,6.658,6.658,0,0,1-6.658,6.658Z" transform="translate(0.032 0.032)" fill="#fff"></path> </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- jobview btn -->
+                                <div class="jobview_type_wrapper">
+                                    <!-- show post select -->
+                                    <div class="jobshow_post_inner">
+                                        <!-- title -->
+                                        <label class="postshow_inputtitle">Show</label>
+                                        <!-- select -->
+                                        <select class="input_control">
+                                            <option value="">10</option>
+                                            <option value="">15</option>
+                                            <option value="">250</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- all job wrapper -->
+                        <div class="post_jobs_wrapper">
+                            <!-- post jobs item-->
+                            <div class="post_jobs_item">
+                                <!-- post jobs item -->
+                                <div class="post_jobsitem_wrapper">
+                                    <!-- left -->
+                                    <div class="post_jobs_left">
+                                        <!-- serial count -->
+                                        <p class="post_serial_count">1</p>
+                                        <!-- content -->
+                                        <div class="post_jobs_content">
+                                            <!-- job post title -->
+                                            <a href="./jobprocess.html" class="post_jobs_title">Laravel React Developers</a>
+                                            <!-- content list -->
+                                            <ul class="post_jobs_conentlist">
+                                                <li>
+                                                    <span class="post_jobslist_title">Published:</span>
+                                                    <span class="post_jobslist_text">31 March 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Deadline:</span>
+                                                    <span class="post_jobslist_text">28 April 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Job Status:</span>
+                                                    <span class="post_jobslist_text">Expired</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/appllyjob.png" alt="">
+                                            Application
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">170</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/update.png" alt="">
+                                            Matched 
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">12</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/shortlista.png" alt="">
+                                            Short-listed
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">50</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/userview.png" alt="">
+                                            View Status
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">10</p>
+                                    </div>
+                                    <!-- action -->
+                                    <div class="post_jobs_action">
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/note.png" alt="">
+                                            Edit    
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/repost.png" alt="">
+                                            Re-Pots
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/pdelete.png" alt="">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- post jobs item-->
+                            <div class="post_jobs_item">
+                                <!-- post jobs item -->
+                                <div class="post_jobsitem_wrapper">
+                                    <!-- left -->
+                                    <div class="post_jobs_left">
+                                        <!-- serial count -->
+                                        <p class="post_serial_count">1</p>
+                                        <!-- content -->
+                                        <div class="post_jobs_content">
+                                            <!-- job post title -->
+                                            <a href="./jobprocess.html" class="post_jobs_title">Laravel React Developers</a>
+                                            <!-- content list -->
+                                            <ul class="post_jobs_conentlist">
+                                                <li>
+                                                    <span class="post_jobslist_title">Published:</span>
+                                                    <span class="post_jobslist_text">31 March 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Deadline:</span>
+                                                    <span class="post_jobslist_text">28 April 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Job Status:</span>
+                                                    <span class="post_jobslist_text">Expired</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/appllyjob.png" alt="">
+                                            Application
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">170</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/update.png" alt="">
+                                            Matched 
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">12</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/shortlista.png" alt="">
+                                            Short-listed
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">50</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/userview.png" alt="">
+                                            View Status
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">10</p>
+                                    </div>
+                                    <!-- action -->
+                                    <div class="post_jobs_action">
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/note.png" alt="">
+                                            Edit    
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/repost.png" alt="">
+                                            Re-Pots
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/pdelete.png" alt="">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- post jobs item-->
+                            <div class="post_jobs_item">
+                                <!-- post jobs item -->
+                                <div class="post_jobsitem_wrapper">
+                                    <!-- left -->
+                                    <div class="post_jobs_left">
+                                        <!-- serial count -->
+                                        <p class="post_serial_count">1</p>
+                                        <!-- content -->
+                                        <div class="post_jobs_content">
+                                            <!-- job post title -->
+                                            <a href="./jobprocess.html" class="post_jobs_title">Laravel React Developers</a>
+                                            <!-- content list -->
+                                            <ul class="post_jobs_conentlist">
+                                                <li>
+                                                    <span class="post_jobslist_title">Published:</span>
+                                                    <span class="post_jobslist_text">31 March 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Deadline:</span>
+                                                    <span class="post_jobslist_text">28 April 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Job Status:</span>
+                                                    <span class="post_jobslist_text">Expired</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/appllyjob.png" alt="">
+                                            Application
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">170</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/update.png" alt="">
+                                            Matched 
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">12</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/shortlista.png" alt="">
+                                            Short-listed
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">50</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/userview.png" alt="">
+                                            View Status
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">10</p>
+                                    </div>
+                                    <!-- action -->
+                                    <div class="post_jobs_action">
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/note.png" alt="">
+                                            Edit    
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/repost.png" alt="">
+                                            Re-Pots
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/pdelete.png" alt="">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- post jobs item-->
+                            <div class="post_jobs_item">
+                                <!-- post jobs item -->
+                                <div class="post_jobsitem_wrapper">
+                                    <!-- left -->
+                                    <div class="post_jobs_left">
+                                        <!-- serial count -->
+                                        <p class="post_serial_count">1</p>
+                                        <!-- content -->
+                                        <div class="post_jobs_content">
+                                            <!-- job post title -->
+                                            <a href="./jobprocess.html" class="post_jobs_title">Laravel React Developers</a>
+                                            <!-- content list -->
+                                            <ul class="post_jobs_conentlist">
+                                                <li>
+                                                    <span class="post_jobslist_title">Published:</span>
+                                                    <span class="post_jobslist_text">31 March 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Deadline:</span>
+                                                    <span class="post_jobslist_text">28 April 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Job Status:</span>
+                                                    <span class="post_jobslist_text">Expired</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/appllyjob.png" alt="">
+                                            Application
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">170</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/update.png" alt="">
+                                            Matched 
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">12</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/shortlista.png" alt="">
+                                            Short-listed
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">50</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/userview.png" alt="">
+                                            View Status
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">10</p>
+                                    </div>
+                                    <!-- action -->
+                                    <div class="post_jobs_action">
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/note.png" alt="">
+                                            Edit    
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/repost.png" alt="">
+                                            Re-Pots
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/pdelete.png" alt="">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- post jobs item-->
+                            <div class="post_jobs_item">
+                                <!-- post jobs item -->
+                                <div class="post_jobsitem_wrapper">
+                                    <!-- left -->
+                                    <div class="post_jobs_left">
+                                        <!-- serial count -->
+                                        <p class="post_serial_count">1</p>
+                                        <!-- content -->
+                                        <div class="post_jobs_content">
+                                            <!-- job post title -->
+                                            <a href="./jobprocess.html" class="post_jobs_title">Laravel React Developers</a>
+                                            <!-- content list -->
+                                            <ul class="post_jobs_conentlist">
+                                                <li>
+                                                    <span class="post_jobslist_title">Published:</span>
+                                                    <span class="post_jobslist_text">31 March 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Deadline:</span>
+                                                    <span class="post_jobslist_text">28 April 2023</span>
+                                                </li>
+                                                <li>
+                                                    <span class="post_jobslist_title">Job Status:</span>
+                                                    <span class="post_jobslist_text">Expired</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/appllyjob.png" alt="">
+                                            Application
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">170</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/update.png" alt="">
+                                            Matched 
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">12</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/shortlista.png" alt="">
+                                            Short-listed
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">50</p>
+                                    </div>
+                                    <!-- count -->
+                                    <div class="post_jobs_count">
+                                        <!-- title -->
+                                        <p class="post_jobs_count_title">
+                                            <!-- image -->
+                                            <img src="assets/image/admin/userview.png" alt="">
+                                            View Status
+                                        </p>
+                                        <!-- text -->
+                                        <p class="post_jobs_count_text">10</p>
+                                    </div>
+                                    <!-- action -->
+                                    <div class="post_jobs_action">
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/note.png" alt="">
+                                            Edit    
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/repost.png" alt="">
+                                            Re-Pots
+                                        </button>
+                                        <!-- btn -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/admin/pdelete.png" alt="">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- bottom nav -->
+                 <div class="bottom_nav">
+                    <!-- wrapper -->
+                    <ul class="bottom_navlist bottom_navPanel">
+                        <!-- list -->
+                        <li>
+                            <a>
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/Logout.png" alt="">
+                                </div>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/profile.png" alt="">
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image activeBottom">
+                                    <img src="assets/image/mobile/dahs.png" alt="">
+                                </div>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/applyjobs.png" alt="">
+                                </div>
+                                <span>Jobs Post</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="others_navbottom">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/others.png" alt="">
+                                </div>
+                                <span>Others</span>
+                            </a>
+                            <ul class="panel_others_list" id="others_navbList">
+                                <li>
+                                    <a href="./allaplications.html">
+                                        <img src="assets/image/mobile/save.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./eviewjobpost.html">
+                                        <img src="assets/image/mobile/view.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>

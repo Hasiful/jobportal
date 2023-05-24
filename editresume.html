@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./userpanel.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./profile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./resume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./savejobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Save Job</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                          
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./applyjobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Apply Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./emailresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/email.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Emailed Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a="" href="./userpanel.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="">
+                                </a>
+                            </div>
+                       <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <!-- admin toggle -->
+                            <div class="admin_collopse admin_mobileCol" id="adminMobile">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint2.jpg" alt="">
+                                </div>
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">
+                                        <span>Super Admin</span>
+                                        <!-- icon -->
+                                        <span class="admin_collaps_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.147" viewBox="0 0 12 6.147">
+                                            <path class="cx_1630815321671_svg_icons" d="M16.749,8.165a.857.857,0,0,0-1.212,0L11.606,12.1a.875.875,0,0,1-1.212,0L6.463,8.165A.857.857,0,1,0,5.251,9.377l3.93,3.931a2.571,2.571,0,0,0,3.637,0l3.931-3.931A.857.857,0,0,0,16.749,8.165Z" transform="translate(-5 -7.914)" fill="#7c929a"></path></svg>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- admin collapse nav -->
+                                <div class="admin_collapse_nav">
+                                    <!-- admin collapse nav -->
+                                    <ul class="sidebar_navList">
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./userpanel.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./profile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/profile.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./resume.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/view.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">View Resume</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editresume.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Resume</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./savejobs.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/save.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Save Jobs</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./applyjobs.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Apply Jobs</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./emailresume.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/email.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Emailed Resume</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="#" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/Logout.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Edit Resume</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Edit-Resume</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- edit profile -->
+                    <div class="edit_profile">
+                        <!-- edit block -->
+                        <div class="edit_block">
+                            <!-- edit form -->
+                            <form action="#" class="edit_form">
+                                <!-- block title -->
+                                <p class="obout_user_title">Personal Details :</p>
+                                <!-- edit form wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Name</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Address</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="number" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Phone</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Designation</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Fathers Name</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Mothers Name</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <div class="custom_datepicker">
+                                            <div class="custom_datepicker_inner">
+                                               <i class="far fa-calendar-alt"></i>
+                                               <input type="text" placeholder="Strat Date" class="date-input 
+                                               input_control contact_input">
+                                            <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                        </div>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Gender</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Marital Status</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Nationality</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="number" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">National Id No</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Religion</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Permanent Address</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Current Location</label>
+                                    </div>
+                                </div>
+                                <!-- add expreince -->
+                                <p class="obout_user_title">Add Exprience</p>
+                                <!-- expreience -->
+                                <div class="edit_form_wrapper">
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Company Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="Strat Date" class="date-input2 date-input 
+                                                   input_control contact_input">
+                                                <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                            </div>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="End Date" class="date-input date-input3 input_control contact_input">
+                                                <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                            </div>
+                                        </div>
+                                        <!-- conrinue -->
+                                        <div class="form_input_inner">
+                                            <div class="job_step_checkitem">
+                                                <!-- inner check -->
+                                                <label class="check_inner cheninner_custom">
+                                                    <input type="checkbox" required="">
+                                                    <span class="checkmark">Continue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Company Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="Strat" class="date-input date-input4 input_control contact_input">
+                                                <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                            </div>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="End Date" class="date-input date-input5 input_control contact_input">
+                                                <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                            </div>
+                                        </div>
+                                        <!-- conrinue -->
+                                        <div class="form_input_inner">
+                                            <div class="job_step_checkitem">
+                                                <!-- inner check -->
+                                                <label class="check_inner cheninner_custom">
+                                                    <input type="checkbox" required="">
+                                                    <span class="checkmark">Continue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- block title -->
+                                <p class="obout_user_title">Application Information: </p>
+                                <!-- edit form wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Available For</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Present Salary</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Expected Salary</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Job Category</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Preferred Country</label>
+                                    </div>
+                                </div>
+                                <!-- add expreince -->
+                                <div class="scope_head_wrapper main_wrapper">
+                                    <p class="obout_user_title">Academic Qualification:</p>
+                                    <div class="sscial_add_btn">
+                                        <button class="global_btn main_btn btnHover" type="button">Add</button>
+                                    </div>
+                                </div>
+                                <!-- expreience -->
+                                <div class="edit_form_wrapper">
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Exam Title</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Subject</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Institute</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="Pas. Year" class="date-input date-input6 input_control contact_input">
+                                                <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                            </div>
+                                        </div>
+                                        <!-- conrinue -->
+                                        <div class="form_input_inner">
+                                            <div class="job_step_checkitem">
+                                                <!-- inner check -->
+                                                <label class="check_inner cheninner_custom">
+                                                    <input type="checkbox" required="">
+                                                    <span class="checkmark">Continue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Exam Title</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Subject</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Institute</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <div class="custom_datepicker">
+                                                <div class="custom_datepicker_inner">
+                                                   <i class="far fa-calendar-alt"></i>
+                                                   <input type="text" placeholder="Pas. Year" class="date-input date-input7 input_control contact_input">
+                                                <div class="calendar-popup"><div class="month-and-year"><h4>May 2023</h4></div><button class="button prev"></button><button class="button next"></button><table><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day">31</td></tr></table></div></div>
+                                            </div>
+                                        </div>
+                                        <!-- conrinue -->
+                                        <div class="form_input_inner">
+                                            <div class="job_step_checkitem">
+                                                <!-- inner check -->
+                                                <label class="check_inner cheninner_custom">
+                                                    <input type="checkbox" required="">
+                                                    <span class="checkmark">Continue</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Reference -->
+                                <div class="scope_head_wrapper main_wrapper">
+                                    <p class="obout_user_title">Add Reference</p>
+                                    <!-- social add button -->
+                                    <div class="sscial_add_btn">
+                                        <button class="global_btn main_btn btnHover" type="button">Add Reference</button>
+                                    </div>
+                                </div>
+                                <!-- wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Organization</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Relation</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Organization</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Relation</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottom nav -->
+                <div class="bottom_nav">
+                    <!-- wrapper -->
+                    <ul class="bottom_navlist bottom_navPanel">
+                        <!-- list -->
+                        <li>
+                            <a>
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/Logout.png" alt="">
+                                </div>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/profile.png" alt="">
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image activeBottom">
+                                    <img src="assets/image/mobile/dahs.png" alt="">
+                                </div>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/view.png" alt="">
+                                </div>
+                                <span>Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="others_navbottom">
+                                <div class="bottom_navlist_image bottom_paneNav_image">
+                                    <img src="assets/image/mobile/others.png" alt="">
+                                </div>
+                                <span>Others</span>
+                            </a>
+                            <ul class="panel_others_list" id="others_navbList">
+                                <li>
+                                    <a href="./editprofile.html">
+                                        <img src="assets/image/mobile/note.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./applyjobs.html">
+                                        <img src="assets/image/mobile/applyjobs.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./editresume.html">
+                                        <img src="assets/image/mobile/note.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./savejobs.html">
+                                        <img src="assets/image/mobile/applyjobs.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="emailresume.html">
+                                        <img src="assets/image/mobile/email.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- date picker -->
+        <script src="assets/js/datepicker.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>

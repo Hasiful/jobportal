@@ -1,0 +1,13 @@
+/* bootstarp css */
+@import url(../css/bootstrap.min.css);
+/* slick slider */
+@import url(../css/slick.css);
+@import url(../css/slick-theme.css);
+/* aos */
+@import url(../css/aos.css);
+/* main css file */
+@import url(../css/global.css);
+/* admin css */
+@import url(../css/admin.css);
+@import url(../css/style.css);
+@import url(../css/responsive.css);

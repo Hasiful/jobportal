@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./dashboard.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./employeeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Company Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./post.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Post a Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Job Post</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./allaplications.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">All Aplications</span>
+                                </a>
+                            </li>
+                          
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a href="./dashboard.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="">
+                                </a>
+                            </div>
+                       <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <!-- admin toggle -->
+                            <div class="admin_collopse admin_mobileCol" id="adminMobile">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint3.jpg" alt="">
+                                </div>
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">
+                                        <span>Super Admin</span>
+                                        <!-- icon -->
+                                        <span class="admin_collaps_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.147" viewBox="0 0 12 6.147">
+                                            <path class="cx_1630815321671_svg_icons" d="M16.749,8.165a.857.857,0,0,0-1.212,0L11.606,12.1a.875.875,0,0,1-1.212,0L6.463,8.165A.857.857,0,1,0,5.251,9.377l3.93,3.931a2.571,2.571,0,0,0,3.637,0l3.931-3.931A.857.857,0,0,0,16.749,8.165Z" transform="translate(-5 -7.914)" fill="#7c929a"></path></svg>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- admin collapse nav -->
+                                <div class="admin_collapse_nav">
+                                    <!-- admin collapse nav -->
+                                    <ul class="sidebar_navList">
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./dashboard.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./employeeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/profile.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Company Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./editemployeprofile.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/note.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./post.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/view.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Post a Jobs</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./eviewjobpost.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">View Job Post</span>
+                                            </a>
+                                        </li>
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="./allaplications.html" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/save.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">All Aplications</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- sidebar navlist item -->
+                                        <li class="sidebarNav_item">
+                                            <!-- nav link -->
+                                            <a href="#" class="sidebarNav_link">
+                                                <!-- icon -->
+                                                <span class="sidebarNav_image">
+                                                    <img src="assets/image/admin/Logout.png" alt="">
+                                                </span>
+                                                <!-- text -->
+                                                <span class="sidebarNav_text">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- compnay job post -->
+                    <div class="admin_container">
+                        <!-- process header -->
+                         <div class="process_header">
+                            <!-- process content -->
+                            <div class="process_content">
+                                <!-- title -->
+                                <h2 class="admin_pagetitle">Laravel-React Developers</h2>
+                               <div class="process_content_wrapper">
+                                    <!-- status item -->
+                                    <div class="jobposts_process_status">
+                                        <p class="job_status_processtitle">Job Status</p>
+                                        <p class="job_status_processtext">Expired</p>
+                                    </div>
+                                    <!-- status item -->
+                                    <div class="jobposts_process_status">
+                                        <p class="job_status_processtitle">Job Type</p>
+                                        <p class="job_status_processtext">Basic Listing</p>
+                                    </div>
+                                    <!-- status item -->
+                                    <div class="jobposts_process_status">
+                                        <p class="job_status_processtitle">Published on</p>
+                                        <p class="job_status_processtext">31 March 2023</p>
+                                    </div>
+                               </div>
+                            </div>
+                            <!-- process_info -->
+                            <div class="process_info">
+                                <!-- process action -->
+                                <div class="process_action">
+                                    <!-- edit -->
+                                    <button class="main_btn">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                        Edit    
+                                    </button>
+                                    <!-- repost -->
+                                    <button class="main_btn">
+                                        <img src="assets/image/admin/repost.png" alt="">
+                                        Re-Post
+                                    </button>
+                                    <button class="main_btn">
+                                        <img src="assets/image/admin/share.png" alt="">
+                                        Share
+                                    </button>
+                                </div>
+                                <!-- process info box -->
+                                <div class="process_infobox">
+                                    <!-- title -->
+                                    <p class="process_infoboxtitle">Post Info</p>
+                                    <!-- list -->
+                                    <ul class="process_infobox_list">
+                                        <li>
+                                            <p class="process_infobox_heading">
+                                                <img src="assets/image/admin/applyjobs.png" alt="">
+                                                Job Listing
+                                            </p>
+                                            <span class="process_infobox_text">97,860</span>
+                                        </li>
+                                        <li>
+                                            <p class="process_infobox_heading">
+                                                <img src="assets/image/admin/shortlist.png" alt="">
+                                                Job Detail
+                                            </p>
+                                            <span class="process_infobox_text">2048</span>
+                                        </li>
+                                        <li>
+                                            <p class="process_infobox_heading">
+                                                <img src="assets/image/admin/applyjobs.png" alt="">
+                                                Applications
+                                            </p>
+                                            <span class="process_infobox_text">173</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                         </div>
+                         <!-- process preview -->
+                         <div class="process_preview">
+                            <!-- wrapper -->
+                            <div class="main_wrapper">
+                                <!-- process left -->
+                                <div class="process_left">
+                                    <!-- wrapper -->
+                                    <div class="job_process_wrapper">
+                                        <!-- process box -->
+                                        <div class="job_process_box">
+                                            <!-- title -->
+                                            <h4 class="job_process_boxtitle">All Applicants</h4>
+                                            <div class="job_process_boxmain active">
+                                                <a class="job_process_boxcount">178</a>
+                                                <!-- job_process_toltip -->
+                                                <div class="job_process_toltip">
+                                                    <!-- single toltip -->
+                                                    <button class="main_btn job_process_toltext">
+                                                        All <span>126</span>
+                                                    </button>
+                                                    <!-- single toltip -->
+                                                    <button class="main_btn job_process_toltext">
+                                                        Not Viewed <span>26</span>
+                                                    </button>
+                                                    <!-- single toltip -->
+                                                    <button class="main_btn job_process_toltext">
+                                                        Viewed <span>76</span>
+                                                    </button>
+                                                    <!-- single toltip -->
+                                                    <button class="main_btn job_process_toltext">
+                                                        Rejected <span>20</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- process box -->
+                                        <div class="job_process_box">
+                                            <!-- title -->
+                                            <h4 class="job_process_boxtitle">Shortlist</h4>
+                                            <div class="job_process_boxmain job_process_devide">
+                                                <a class="job_process_boxcount">50</a>
+                                                <!-- cross btn -->
+                                                <button class="job_boxcount_cross main_btn">
+                                                    <img src="assets/image/icon/cross.png" alt="">
+                                                </button>
+                                                <!-- job_process_toltip -->
+                                                <div class="job_process_toltip">
+                                                    <!-- single toltip -->
+                                                    <button class="main_btn job_process_toltext">
+                                                        Shortlisted <span>126</span>
+                                                    </button>
+                                                    <!-- single toltip -->
+                                                    <button class="main_btn job_process_toltext">
+                                                        Qualified <span>0</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- process box -->
+                                        <div class="job_process_box">
+                                            <!-- title -->
+                                            <h4 class="job_process_boxtitle">Sales</h4>
+                                            <div class="job_process_boxmain job_process_devide">
+                                                <a class="job_process_boxcount">20</a>
+                                                <!-- cross btn -->
+                                                <button class="job_boxcount_cross main_btn">
+                                                    <img src="assets/image/icon/cross.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- add process bnt -->
+                                        <div class="add_jobprocessBtn">
+                                            <!-- btn -->
+                                            <button class="main_btn" id="add_jobprocessBtn">
+                                                <img src="assets/image/admin/addbtn.png" alt="">
+                                                Add Step
+                                            </button>
+                                        </div>
+                                        <!-- popup design -->
+                                        <div class="popup_main" id="mainpopup">
+                                            <!-- wrapper -->
+                                            <div class="popup_wrapper">
+                                                <!-- popup close -->
+                                                <div class="popup_close">
+                                                    <!-- cross -->
+                                                    <button class="main_btn">
+                                                        <img src="assets/image/icon/cross.png" alt="">
+                                                    </button>
+                                                </div>
+                                                <!-- jobprocess step popup -->
+                                                <div class="jobprocess_step_popup">
+                                                    <!-- content -->
+                                                    <form action="#" class="jobprocess_steppop_content">
+                                                        <!-- title -->
+                                                        <h3 class="jobprocess_popup_title">Add Recruitment Step</h3>
+                                                        <!-- wrapper -->
+                                                        <div class="jobprocess_steppop_wrapper">
+                                                            <!-- item -->
+                                                            <div class="jobprocess_steppop_item" id="step_itembtnfirst">
+                                                                <!-- content -->
+                                                                <div class="jobprocess_steppop_left">
+                                                                    <!-- left radio -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input class="popup_checked" type="radio" name="popup">
+                                                                        <label>Only Shortlist</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- icon -->
+                                                                <div class="jobprocess_steppop_icon">
+                                                                    <img src="assets/image/admin/shortlist.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="jobprocess_steppop_item step_itembtn">
+                                                                <!-- content -->
+                                                                <div class="jobprocess_steppop_left">
+                                                                    <!-- left radio -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input class="popup_checked" type="radio" name="popup">
+                                                                        <label>Online Test</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- icon -->
+                                                                <div class="jobprocess_steppop_icon">
+                                                                    <img src="assets/image/admin/note.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="jobprocess_steppop_item step_itembtn">
+                                                                <!-- content -->
+                                                                <div class="jobprocess_steppop_left">
+                                                                    <!-- left radio -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input class="popup_checked" type="radio" name="popup">
+                                                                        <label>Face To Face</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- icon -->
+                                                                <div class="jobprocess_steppop_icon">
+                                                                    <img src="assets/image/admin/view.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="jobprocess_steppop_item step_itembtn">
+                                                                <!-- content -->
+                                                                <div class="jobprocess_steppop_left">
+                                                                    <!-- left radio -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input class="popup_checked" type="radio" name="popup">
+                                                                        <label>Live Interview</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- icon -->
+                                                                <div class="jobprocess_steppop_icon">
+                                                                    <img src="assets/image/admin/share.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="jobprocess_steppop_item step_itembtn">
+                                                                <!-- content -->
+                                                                <div class="jobprocess_steppop_left">
+                                                                    <!-- left radio -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input class="popup_checked" type="radio" name="popup">
+                                                                        <label>Written Test</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- icon -->
+                                                                <div class="jobprocess_steppop_icon">
+                                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="jobprocess_steppop_item step_itembtn">
+                                                                <!-- content -->
+                                                                <div class="jobprocess_steppop_left">
+                                                                    <!-- left radio -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input class="popup_checked" type="radio" name="popup">
+                                                                        <label>Other</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- icon -->
+                                                                <div class="jobprocess_steppop_icon">
+                                                                    <img src="assets/image/admin/dahs.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- jobprocess_steppop_name -->
+                                                        <div class="jobprocess_steppop_name">
+                                                            <!-- name input -->
+                                                            <div class="filter_input_inner w_100">
+                                                                <label for="applicantName">Step Name (required)</label>
+                                                                <input id="applicantName" type="text" class="input_control contact_input" required>
+                                                            </div>
+                                                        </div>
+                                                        <!-- jobprocess_steppop_separate -->
+                                                        <div class="jobprocess_popform" id="jobprocess_popform">
+                                                            <!-- jobprocess_popform_requir -->
+                                                            <div class="jobprocess_popform_requir">
+                                                                <h3>Information for schedule</h3>
+                                                                <p>The below information will be used later while conducting the recruitment process.</p>
+                                                            </div>
+                                                            <!-- input -->
+                                                            <div class="filter_input_inner w_100">
+                                                                <label for="contact">Contact no</label>
+                                                                <input id="contact" type="text" class="input_control contact_input" required>
+                                                            </div>
+                                                            <!-- steppop requir -->
+                                                            <div class="steppop_requir" id="steppop_requir">
+                                                                <!-- title -->
+                                                                <p>Applicants can request for reschedule through system</p>
+                                                                <!-- title -->
+                                                                <div class="job_step_checkinner">
+                                                                    <!-- item -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input type="radio" id="requirpop1" name="steppop" required="">
+                                                                        <label for="requirpop1">Yes</label>
+                                                                    </div>
+                                                                    <!-- item -->
+                                                                    <div class="job_step_checkitem">
+                                                                        <input type="radio" id="requirpop2" name="steppop" required="">
+                                                                        <label for="requirpop2">No</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- submit button -->
+                                                        <div class="jobprocess_steppop_btn">
+                                                            <div class="contact_submit">
+                                                                <button type="submit" class="main_btn global_btn btnHover">Set Name</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- right -->
+                                <div class="process_right">
+                                     <!-- process box -->
+                                     <div class="job_process_box">
+                                        <!-- title -->
+                                        <h4 class="job_process_boxtitle">Hiring List</h4>
+                                        <div class="job_process_boxmain">
+                                            <a class="job_process_boxcount" href="">10</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="filter_header">
+                            <!-- main wrapper -->
+                            <div class="main_wrapper">
+                                <!-- advance filter -->
+                                <div class="advance_filter">
+                                    <!-- advance filter wrapper -->
+                                    <div class="advance_filter_wrapper">
+                                        <!-- item -->
+                                        <div class="advance_filter_item">
+                                            <div class="advance_filter_itemContent">
+                                                <!-- filter image -->
+                                                <div class="filter_item_image">
+                                                    <img src="assets/image/admin/quickfil.png" alt="">
+                                                </div>
+                                                <!-- filter image -->
+                                                <p class="filter_item_text">Quick Filter</p>
+                                            </div>
+                                            <!-- filter form -->
+                                            <div class="filter_form">
+                                                <!-- form -->
+                                                <form action="">
+                                                    <!-- wrapper -->
+                                                    <div class="filter_form_wrapper main_wrapper">
+                                                        <!-- inner -->
+                                                        <div class="filter_form_inner">
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="applicantName">Applicant Name</label>
+                                                                <input id="applicantName" type="text" class="input_control contact_input">
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="applicantName">Location</label>
+                                                                <input id="applicantName" type="text" class="input_control contact_input">
+                                                                <!-- filter location info -->
+                                                                <div class="filter_locattion_info info_filter_top">
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Present</span>
+                                                                    </label>
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Permanent</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Salary Range</label>
+                                                                <!-- devide -->
+                                                                <div class="filter_input_divide main_wrapper">
+                                                                    <!-- inner -->
+                                                                    <div class="filter_input_inner">
+                                                                        <select class="input_control contact_input">
+                                                                            <option value="">8000</option>
+                                                                            <option value="">9000</option>
+                                                                            <option value="">10000</option>
+                                                                            <option value="">11000</option>
+                                                                            <option value="">12000</option>
+                                                                            <option value="">13000</option>
+                                                                            <option value="">14000</option>
+                                                                            <option value="">15000</option>
+                                                                            <option value="">16000</option>
+                                                                            <option value="">17000</option>
+                                                                            <option value="">18000</option>
+                                                                            <option value="">19000</option>
+                                                                            <option value="">20000</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <!-- inner -->
+                                                                    <div class="filter_input_inner">
+                                                                        <select class="input_control contact_input">
+                                                                            <option value="">8000</option>
+                                                                            <option value="">9000</option>
+                                                                            <option value="">10000</option>
+                                                                            <option value="">11000</option>
+                                                                            <option value="">12000</option>
+                                                                            <option value="">13000</option>
+                                                                            <option value="">14000</option>
+                                                                            <option value="">15000</option>
+                                                                            <option value="">16000</option>
+                                                                            <option value="">17000</option>
+                                                                            <option value="">18000</option>
+                                                                            <option value="">19000</option>
+                                                                            <option value="">20000</option>
+                                                                            <option value="">21000</option>
+                                                                            <option value="">22000</option>
+                                                                            <option value="">23000</option>
+                                                                            <option value="">24000</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- inner -->
+                                                        <div class="filter_form_inner">
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Age Range</label>
+                                                                <!-- devide -->
+                                                                <div class="filter_input_divide main_wrapper">
+                                                                    <!-- inner -->
+                                                                    <div class="filter_input_inner">
+                                                                        <select class="input_control contact_input">
+                                                                            <option value="">18</option>
+                                                                            <option value="">19</option>
+                                                                            <option value="">20</option>
+                                                                            <option value="">21</option>
+                                                                            <option value="">22</option>
+                                                                            <option value="">22</option>
+                                                                            <option value="">23</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <!-- inner -->
+                                                                    <div class="filter_input_inner">
+                                                                        <select class="input_control contact_input">
+                                                                            <option value="">24</option>
+                                                                            <option value="">24</option>
+                                                                            <option value="">26</option>
+                                                                            <option value="">27</option>
+                                                                            <option value="">28</option>
+                                                                            <option value="">29</option>
+                                                                            <option value="">30</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="applicantName">Gender</label>
+                                                                <!-- filter location info -->
+                                                                <div class="filter_locattion_info">
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Male</span>
+                                                                    </label>
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Female</span>
+                                                                    </label>
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Others</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="applicantName">Job Level</label>
+                                                                <!-- filter location info -->
+                                                                <div class="filter_locattion_info">
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Intern</span>
+                                                                    </label>
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Mid Level</span>
+                                                                    </label>
+                                                                    <!-- present -->
+                                                                    <label class="check_inner cheninner_custom">
+                                                                        <input type="checkbox" required="">
+                                                                        <span class="checkmark">Top Level</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- search submit -->
+                                                    <div class="filter_form_submit">
+                                                        <!-- submit btn -->
+                                                        <div class="contact_submit">
+                                                            <button type="submit" class="main_btn global_btn btnHover">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="advance_filter_item">
+                                            <!-- content -->
+                                            <div class="advance_filter_itemContent">
+                                                <!-- filter image -->
+                                                <div class="filter_item_image">
+                                                    <img src="assets/image/admin/acafilter.png" alt="">
+                                                </div>
+                                                <!-- filter image -->
+                                                <p class="filter_item_text">Academic</p>
+                                            </div>
+                                            <!-- filter form -->
+                                            <div class="filter_form">
+                                                <!-- form -->
+                                                <form action="">
+                                                    <!-- wrapper -->
+                                                    <div class="filter_form_wrapper main_wrapper">
+                                                        <!-- inner -->
+                                                        <div class="filter_form_inner">
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Degree level</label>
+                                                                <!-- inner -->
+                                                                <div class="filter_input_inner">
+                                                                    <select class="input_control contact_input">
+                                                                        <option value="">Any</option>
+                                                                        <option value="">Diploma</option>
+                                                                        <option value="">Becholors/Honors</option>
+                                                                        <option value="">Masters</option>
+                                                                        <option value="">Doctoral</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Major Subject</label>
+                                                                <!-- inner -->
+                                                                <div class="filter_input_inner">
+                                                                    <select class="input_control contact_input">
+                                                                        <option value="">English</option>
+                                                                        <option value="">Computer</option>
+                                                                        <option value="">EEE</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- inner -->
+                                                        <div class="filter_form_inner">
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="applicantName">Course Name</label>
+                                                                <input id="applicantName" type="text" class="input_control contact_input">
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Result</label>
+                                                                <!-- inner -->
+                                                                <div class="filter_input_inner">
+                                                                    <select class="input_control contact_input">
+                                                                        <option value="">Any</option>
+                                                                        <option value="">First Class</option>
+                                                                        <option value="">Second Class</option>
+                                                                        <option value="">Third Class</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- search submit -->
+                                                    <div class="filter_form_submit">
+                                                        <!-- submit btn -->
+                                                        <div class="contact_submit">
+                                                            <button type="submit" class="main_btn global_btn btnHover">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="advance_filter_item">
+                                            <!-- content -->
+                                            <div class="advance_filter_itemContent">
+                                                <!-- filter image -->
+                                                <div class="filter_item_image">
+                                                    <img src="assets/image/admin/applyjobs.png" alt="">
+                                                </div>
+                                                <!-- filter image -->
+                                                <p class="filter_item_text">Experience</p>
+                                            </div>
+                                            <!-- filter form -->
+                                            <div class="filter_form">
+                                                <!-- form -->
+                                                <form action="">
+                                                    <!-- wrapper -->
+                                                    <div class="filter_form_wrapper main_wrapper">
+                                                        <!-- inner -->
+                                                        <div class="filter_form_inner">
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Experience</label>
+                                                                <!-- devide -->
+                                                                <div class="filter_input_divide main_wrapper">
+                                                                    <!-- inner -->
+                                                                    <div class="filter_input_inner">
+                                                                        <select class="input_control contact_input">
+                                                                            <option value="">1</option>
+                                                                            <option value="">2</option>
+                                                                            <option value="">3</option>
+                                                                            <option value="">4</option>
+                                                                            <option value="">5</option>
+                                                                            <option value="">6</option>
+                                                                            <option value="">7</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <!-- inner -->
+                                                                    <div class="filter_input_inner">
+                                                                        <select class="input_control contact_input">
+                                                                            <option value="">1</option>
+                                                                            <option value="">2</option>
+                                                                            <option value="">3</option>
+                                                                            <option value="">4</option>
+                                                                            <option value="">5</option>
+                                                                            <option value="">6</option>
+                                                                            <option value="">7</option>
+                                                                            <option value="">8</option>
+                                                                            <option value="">9</option>
+                                                                            <option value="">10</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Skill</label>
+                                                                <select class="input_control contact_input">
+                                                                    <option value="">Any</option>
+                                                                    <option value="">HTML</option>
+                                                                    <option value="">CSS</option>
+                                                                    <option value="">JavaScript</option>
+                                                                    <option value="">Php</option>
+                                                                    <option value="">React</option>
+                                                                    <option value="">Vue</option>
+                                                                    <option value="">Bootstrap</option>
+                                                                    <option value="">Tailwind</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <!-- inner -->
+                                                        <div class="filter_form_inner">
+                                                            <!-- input inner -->
+                                                            <div class="filter_input_inner">
+                                                                <label for="">Business Area</label>
+                                                                <select class="input_control contact_input">
+                                                                    <option value="">Advertising Agency</option>
+                                                                    <option value="">Advertising Technology (AdTech) Startup</option>
+                                                                    <option value="">Agro based firms (incl. Agro Processing/Seed/GM)</option>
+                                                                    <option value="">Agro based Startup</option>
+                                                                    <option value="">Airline</option>
+                                                                    <option value="">Amusement Park</option>
+                                                                    <option value="">Animal/Plant Breeding</option>
+                                                                    <option value="">Architecture Firm</option>
+                                                                    <option value="">Artificial Intelligence (AI) Startup</option>
+                                                                    <option value="">Audit Firms /Tax Consultant</option>
+                                                                    <option value="">Automobile</option>
+                                                                    <option value="">Bakery (Cake, Biscuit, Bread)</option>
+                                                                    <option value="">Banks</option>
+                                                                    <option value="">Bar/Pub</option>
+                                                                    <option value="">Battery, Storage cell</option>
+                                                                    <option value="">Beauty Parlor/Saloon/Spa</option>
+                                                                    <option value="">Beverage</option>
+                                                                    <option value="">Bicycle</option>
+                                                                    <option value="">Boutique/ Fashion</option>
+                                                                    <option value="">BPO/ Data Entry Firm</option>
+                                                                    <option value="">Brick</option>
+                                                                    <option value="">Business-to-Business (B2B) Software and </option><option value="">Services Startup</option>
+                                                                    <option value="">Buying House</option>
+                                                                    <option value="">Call Center</option>
+                                                                    <option value="">Call Center</option>
+                                                                    <option value="">Catering</option>
+                                                                    <option value="">Cellular Phone Operator</option>
+                                                                    <option value="">Cement</option>
+                                                                    <option value="">Cement Industry</option>
+                                                                    <option value="">Chain shop</option>+
+                                                                    <option value="">Chamber</option>
+                                                                    <option value="">Chemical Industries</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- search submit -->
+                                                    <div class="filter_form_submit">
+                                                        <!-- submit btn -->
+                                                        <div class="contact_submit">
+                                                            <button type="submit" class="main_btn global_btn btnHover">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="advance_filter_item">
+                                            <!-- content -->
+                                            <div class="advance_filter_itemContent">
+                                                <!-- filter image -->
+                                                <div class="filter_item_image">
+                                                    <img src="assets/image/admin/expfilter.png" alt="">
+                                                </div>
+                                                <!-- filter image -->
+                                                <p class="filter_item_text">Keywords</p>
+                                            </div>
+                                            <!-- filter form -->
+                                            <div class="filter_form">
+                                                <!-- form -->
+                                                <form action="">
+                                                    <!-- wrapper -->
+                                                    <div class="filter_form_wrapper main_wrapper">
+                                                        <!-- input inner -->
+                                                        <div class="filter_input_inner w_100">
+                                                            <label for="applicantName">Applicant Name</label>
+                                                            <input id="applicantName" type="text" class="input_control contact_input">
+                                                        </div>
+                                                    </div>
+                                                    <!-- search submit -->
+                                                    <div class="filter_form_submit">
+                                                        <!-- submit btn -->
+                                                        <div class="contact_submit">
+                                                            <button type="submit" class="main_btn global_btn btnHover">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- jobview btn -->
+                                <div class="jobview_type_wrapper">
+                                    <!-- show post select -->
+                                    <div class="jobshow_post_inner">
+                                        <!-- title -->
+                                        <label class="postshow_inputtitle">Show</label>
+                                        <!-- select -->
+                                        <select class="input_control">
+                                            <option value="">10</option>
+                                            <option value="">15</option>
+                                            <option value="">25</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- all job wrapper -->
+                        <div class="user_appwrapper">
+                            <!-- popup -->
+                            <div class="popup_main" id="popup_cv">
+                                <!-- cvpopup wrapper -->
+                                <div class="cvpopup_wrapper">
+                                    <!-- close btn -->
+                                    <div class="popup_closecv" id="popup_closecv">
+                                        <!-- cross -->
+                                        <button class="main_btn">
+                                            <img src="assets/image/icon/cross.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="cvpopup_body">
+                                        <!-- header -->
+                                        <div class="cvpopup_header">
+                                            <!-- cvdown loader -->
+                                            <div class="download_btn_wrapper">
+                                                <!-- download_btn -->
+                                                <button class="download_btn main_btn type="button">
+                                                    <img src="assets/image/admin/pdf.png" alt="">
+                                                </button>
+                                                <!-- download_btn -->
+                                                <button class="download_btn main_btn type="button">
+                                                    <img src="assets/image/admin/word.png" alt="">
+                                                </button>
+                                                <!-- download_btn -->
+                                                <button class="download_btn main_btn type="button">
+                                                    <img src="assets/image/admin/printing.png" alt="">
+                                                </button>
+                                            </div>
+                                            <!-- cvpopup tabs -->
+                                            <div class="cvpopup_tabs">
+                                                <!-- button -->
+                                                <button class="cvpopup_tabs_btn main_btn activeTab" id="cvtabs_btndetails">Details View</button>
+                                                <!-- button -->
+                                                <button class="cvpopup_tabs_btn main_btn" id="cvtabs_btnshort">Short View</button>
+                                            </div>
+                                        </div>
+                                        <!-- tabs -->
+                                        <div class="admin_container" id="cvdetails_view">
+                                            <!-- resume profile -->
+                                            <div class="resume_profile main_wrapper">
+                                                <!-- profile info -->
+                                                <div class="resume_profile_info">
+                                                    <!-- profile name -->
+                                                    <p class="resume_profile_name">Robert Merry</p>
+                                                    <!-- info list -->
+                                                    <ul class="resume_info_list">
+                                                        <!-- info list item -->
+                                                        <li class="resume_info_item">
+                                                            <span>Address:</span>
+                                                            <span>New Yourk, #208, USA</span>
+                                                        </li>
+                                                        <!-- info list item -->
+                                                        <li class="resume_info_item">
+                                                            <span>Phone:</span>
+                                                            <span>017238299660</span>
+                                                        </li>
+                                                        <!-- info list item -->
+                                                        <li class="resume_info_item">
+                                                            <span>Email:</span>
+                                                            <span>info@gmail.com</span>
+                                                        </li>
+                                                        <!-- info list item -->
+                                                        <li class="resume_info_item">
+                                                            <span>Designation:</span>
+                                                            <span>Web Developer</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- image -->
+                                                <div class="resume_profile_image">
+                                                    <img src="assets/image/team/t3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- resume block -->
+                                            <div class="resume_block">
+                                                <p class="resume_block_title">Employment History:</p>
+                                                <!-- resume table -->
+                                                <div class="resume_table">
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Company Name</th>
+                                                                <th>Designation</th>
+                                                                <th>Duration</th>
+                                                                <th>Start Job</th>
+                                                                <th>End Job</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <!-- tbody -->
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Code Linear</td>
+                                                                <td>Web Designer</td>
+                                                                <td>.6</td>
+                                                                <td>10-2-2021</td>
+                                                                <td>3-10-2023</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>NGen It</td>
+                                                                <td>Web Designer</td>
+                                                                <td>2</td>
+                                                                <td>1-12-2022</td>
+                                                                <td>5-1-2025</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bongoit Ltd</td>
+                                                                <td>Frontend Developer</td>
+                                                                <td>2</td>
+                                                                <td>1-12-2022</td>
+                                                                <td>5-1-2025</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- resume block -->
+                                            <div class="resume_block">
+                                                <p class="resume_block_title">Application Information:</p>
+                                                <!-- resume table -->
+                                                <div class="resume_table resume_tableList">
+                                                    <table>
+                                                        <!-- tbody -->
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Available For</td>
+                                                                <td>: Full Time</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Present Salary</td>
+                                                                <td>: $1000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Expected Salary</td>
+                                                                <td>: $1500</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Job Category</td>
+                                                                <td>: Software</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Preferred Country</td>
+                                                                <td>: USA</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- resume block -->
+                                            <div class="resume_block">
+                                                <p class="resume_block_title">Academic Qualification:</p>
+                                                <!-- resume table -->
+                                                <div class="resume_table">
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Exam Title</th>
+                                                                <th>Subject</th>
+                                                                <th>Institute</th>
+                                                                <th>Pas.Year</th>
+                                                                <th>Duration</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <!-- tbody -->
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Diploma Engineering</td>
+                                                                <td>CST</td>
+                                                                <td>Dinajpur Polytechnic Institute</td>
+                                                                <td>10-6-2022</td>
+                                                                <td>4</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- resume block -->
+                                            <div class="resume_block">
+                                                <p class="resume_block_title">Personal Details :</p>
+                                                <!-- resume table -->
+                                                <div class="resume_table resume_tableList">
+                                                    <table>
+                                                        <!-- tbody -->
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Father's Name</td>
+                                                                <td>: Jhon Cena</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Mother's Name</td>
+                                                                <td>: Marina Star</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Date of Birth</td>
+                                                                <td>: March 1, 2001</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Gender</td>
+                                                                <td>: Male</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Marital Status</td>
+                                                                <td>: Unmarried</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Nationality</td>
+                                                                <td>: American</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>National Id No</td>
+                                                                <td>: 142584687541</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Religion</td>
+                                                                <td>: Islam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Permanent Address</td>
+                                                                <td>:  New Yourk, #208, USA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Current Location</td>
+                                                                <td>: New York</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- resume block -->
+                                            <div class="resume_block">
+                                                <p class="resume_block_title">Specialization:</p>
+                                                <!-- resume table -->
+                                                <div class="resume_table">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <ul>
+                                                                        <li>HTML</li>
+                                                                        <li>CSS</li>
+                                                                        <li>Bootstrap</li>
+                                                                        <li>Tailwind CSS</li>
+                                                                        <li>SaaS</li>
+                                                                        <li>JavaScript</li>
+                                                                        <li>React</li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- resume block -->
+                                            <div class="resume_block">
+                                                <p class="resume_block_title">Reference:</p>
+                                                <!-- resume table -->
+                                                <div class="resume_table resume_tableList">
+                                                    <table>
+                                                        <!-- tbody -->
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>: David Toren</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Organization</td>
+                                                                <td>: Meta</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Designation</td>
+                                                                <td>: Software Engineer</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Relation</td>
+                                                                <td>: Uncle</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- short view -->
+                                        <div class="cvshort_view" id="cvshort_view">
+                                            <!-- banner -->
+                                            <div class="shortview_banner">
+                                                <!-- banner content -->
+                                                <div class="shortview_banner_content">
+                                                    <!-- name -->
+                                                    <p class="shortview_banner_name">Muhammad Hannan</p>
+                                                    <!-- designation -->
+                                                    <p class="shortview_banner_designation">Full stack developer</p>
+                                                </div>
+                                            </div>
+                                            <!-- wrapper -->
+                                            <div class="cvshort_view_wrapper">
+                                                <!-- sidebar -->
+                                                <div class="shortview_sidebar">
+                                                    <!-- image -->
+                                                    <div class="shortview_image">
+                                                        <img src="assets/image/team/t3.jpg" alt="">
+                                                    </div>
+                                                    <!-- scope -->
+                                                    <div class="shortview_scope">
+                                                        <!-- scope title -->
+                                                        <h3 class="shortview_scope_title">My Contact</h3>
+                                                        <!-- contact information -->
+                                                        <div class="shortview_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <img src="assets/image/admin/iphone.png" alt="">
+                                                                    <span class="shortview_list_text">01723507989</span>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="assets/image/admin/mailinfo.png" alt="">
+                                                                    <span class="shortview_list_text">info@gmail.com</span>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="assets/image/admin/address.png" alt="">
+                                                                    <span class="shortview_list_text">New Yourk, #208, USA</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- scope -->
+                                                    <div class="shortview_scope">
+                                                        <!-- scope title -->
+                                                        <h3 class="shortview_scope_title">Personal Information</h3>
+                                                        <!-- contact information -->
+                                                        <div class="shortview_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Fathers Name:</span>
+                                                                    <span class="shortview_list_text">Jhon Cena</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Mothers Name:</span>
+                                                                    <span class="shortview_list_text">Marina Star</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Date of Birth:</span> 
+                                                                    <span class="shortview_list_text">March 1, 2001</span>
+                                                                </li>
+                                                                <li>   
+                                                                    <span class="shortview_list_title">Gender:</span> 
+                                                                    <span class="shortview_list_text">Male</span>
+                                                                </li>
+                                                                <li>   
+                                                                    <span class="shortview_list_title">Marital Status: </span>
+                                                                    <span class="shortview_list_text">Unmarried</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Nationality:</span> 
+                                                                    <span class="shortview_list_text">American</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">National Id No:</span> 
+                                                                    <span class="shortview_list_text">142584687541</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Religion:</span>
+                                                                    <span class="shortview_list_text">Islam</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Permanent Address:</span> 
+                                                                    <span class="shortview_list_text">New Yourk, #208, USA</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Current Location:</span> 
+                                                                    <span class="shortview_list_text">New York</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- shortview_content -->
+                                                <div class="shortview_content">
+                                                    <!-- scope -->
+                                                    <div class="shortview_scope">
+                                                        <!-- scope title -->
+                                                        <h3 class="shortview_scope_title">Expreince</h3>
+                                                        <!-- contact information -->
+                                                        <div class="shortview_list">
+                                                            <!-- expreince job title -->
+                                                            <p class="expreince_jobttile">Laravel Developer</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Experience:</span>
+                                                                    <span class="shortview_list_text">3 months</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Company:</span>
+                                                                    <span class="shortview_list_text">SEO Exparte Bangladesh</span>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- expreince job title -->
+                                                            <p class="expreince_jobttile">React Developer</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Experience:</span>
+                                                                    <span class="shortview_list_text">5 months</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Company:</span>
+                                                                    <span class="shortview_list_text">Opedia</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- scope -->
+                                                    <div class="shortview_scope">
+                                                        <!-- scope title -->
+                                                        <h3 class="shortview_scope_title">Skill</h3>
+                                                        <!-- contact information -->
+                                                        <div class="shortview_skilllist">
+                                                            <ul>
+                                                                <li>HTML</li>
+                                                                <li>CSS</li>
+                                                                <li>Bootstrap</li>
+                                                                <li>Tailwind CSS</li>
+                                                                <li>SaaS</li>
+                                                                <li>JavaScript</li>
+                                                                <li>React</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- scope -->
+                                                    <div class="shortview_scope">
+                                                        <!-- scope title -->
+                                                        <h3 class="shortview_scope_title">Educational Qualification</h3>
+                                                        <!--  information -->
+                                                        <div class="shortview_list">
+                                                            <!--  title -->
+                                                            <p class="expreince_jobttile">Computer Science & Engineering</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Institute:</span>
+                                                                    <span class="shortview_list_text">United International University</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Pass Year:</span>
+                                                                    <span class="shortview_list_text">2018</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Subjuect:</span>
+                                                                    <span class="shortview_list_text">Computer Science</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Result:</span>
+                                                                    <span class="shortview_list_text">CGPA 3.56 (Out of 4)</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- scope -->
+                                                    <div class="shortview_scope">
+                                                        <!-- scope title -->
+                                                        <h3 class="shortview_scope_title">Reference</h3>
+                                                        <!--  information -->
+                                                        <div class="shortview_list">
+                                                            <!--  title -->
+                                                            <p class="expreince_jobttile">Chowdhury Mofizur Rahman</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Relation:</span>
+                                                                    <span class="shortview_list_text">Relative</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Mobile No:</span>
+                                                                    <span class="shortview_list_text">01782998660</span>
+                                                                </li>
+                                                            </ul>
+                                                            <!--  title -->
+                                                            <p class="expreince_jobttile">Md Billal</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Relation:</span>
+                                                                    <span class="shortview_list_text">Cousin</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="shortview_list_title">Mobile No:</span>
+                                                                    <span class="shortview_list_text">01985208897</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user appcard -->
+                            <div class="user_appcard">
+                                <!-- profile -->
+                                <div class="appcard_profile">
+                                    <!-- image -->
+                                    <div class="appcard_profile_image">
+                                        <img src="assets/image/team/t3.jpg" alt="">
+                                    </div>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        <img src="assets/image/icon/whitec.png" alt="">
+                                        20 april 2023
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Age: 22 Years
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Expeected: 2000$
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Current: 1800$
+                                    </p>
+                                </div>
+                                <!-- information -->
+                                <div class="appcard_info">
+                                    <!-- name -->
+                                    <a  class="appcard_info_name">Muhammad Hannan</a>
+                                    <!-- info phone number -->
+                                    <a href="tel:01725307989" class="appcard_info_mobile">
+                                        <img src="assets/image/icon/tel.png" alt="">
+                                        01725307989
+                                    </a>
+                                    <!-- location -->
+                                    <ul class="jobPost_descreption_list">
+                                        <!-- item -->
+                                        <li class="jobPost_descreption_item">
+                                            <!-- location icon -->
+                                            <span class="jobpost_list_icon">
+                                                <img src="assets/image/icon/location.png" alt="location">
+                                            </span>
+                                            <!-- text -->
+                                            <span class="job_desgination_text">Panchaghar, Bangladesh</span>
+                                        </li>
+                                    </ul>
+                                    <p class="job_apply_count">Applied <span>1</span> Time</p>
+                                </div>
+                                <!-- Education -->
+                                <div class="appcard_education">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/acafilter.png" alt="">
+                                        Education
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Bachelor of Science (BSc)</p>
+                                        <p class="expren_design_appcard">Bangladesh University of Business and Technology</p>
+                                    </div>
+                                </div>
+                                <!-- expreince -->
+                                <div class="appcard_expreince">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                        4+ Years
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Classic IT LTD</p>
+                                        <p class="expren_design_appcard">Full stack developer in php laravel (2+ years)</p>
+                                    </div>
+
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Datatrix soft Ltd</p>
+                                        <p class="expren_design_appcard">Web Developer (3+ years)</p>
+                                    </div>
+                                </div>
+                                <!-- Eduication -->
+                                <div class="appcard_action">
+                                    <!-- action -->
+                                    <div class="application_action">
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/done.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Shortlist</p>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/delete.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Reject</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user appcard -->
+                            <div class="user_appcard">
+                                <!-- profile -->
+                                <div class="appcard_profile">
+                                    <!-- image -->
+                                    <div class="appcard_profile_image">
+                                        <img src="assets/image/team/t2.jpg" alt="">
+                                    </div>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        <img src="assets/image/icon/whitec.png" alt="">
+                                        20 april 2023
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Age: 22 Years
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Expeected: 2000$
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Current: 1800$
+                                    </p>
+                                </div>
+                                <!-- information -->
+                                <div class="appcard_info">
+                                    <!-- name -->
+                                    <a  class="appcard_info_name">Muhammad Hannan</a>
+                                    <!-- info phone number -->
+                                    <a href="tel:01725307989" class="appcard_info_mobile">
+                                        <img src="assets/image/icon/tel.png" alt="">
+                                        01725307989
+                                    </a>
+                                    <!-- location -->
+                                    <ul class="jobPost_descreption_list">
+                                        <!-- item -->
+                                        <li class="jobPost_descreption_item">
+                                            <!-- location icon -->
+                                            <span class="jobpost_list_icon">
+                                                <img src="assets/image/icon/location.png" alt="location">
+                                            </span>
+                                            <!-- text -->
+                                            <span class="job_desgination_text">Panchaghar, Bangladesh</span>
+                                        </li>
+                                    </ul>
+                                    <p class="job_apply_count">Applied <span>1</span> Time</p>
+                                </div>
+                                <!-- Education -->
+                                <div class="appcard_education">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/acafilter.png" alt="">
+                                        Education
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Bachelor of Science (BSc)</p>
+                                        <p class="expren_design_appcard">Bangladesh University of Business and Technology</p>
+                                    </div>
+                                </div>
+                                <!-- expreince -->
+                                <div class="appcard_expreince">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                        4+ Years
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Classic IT LTD</p>
+                                        <p class="expren_design_appcard">Full stack developer in php laravel (2+ years)</p>
+                                    </div>
+
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Datatrix soft Ltd</p>
+                                        <p class="expren_design_appcard">Web Developer (3+ years)</p>
+                                    </div>
+                                </div>
+                                <!-- Eduication -->
+                                <div class="appcard_action">
+                                    <!-- action -->
+                                    <div class="application_action">
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/done.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Shortlist</p>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/delete.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Reject</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user appcard -->
+                            <div class="user_appcard">
+                                <!-- profile -->
+                                <div class="appcard_profile">
+                                    <!-- image -->
+                                    <div class="appcard_profile_image">
+                                        <img src="assets/image/team/t1.jpg" alt="">
+                                    </div>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        <img src="assets/image/icon/whitec.png" alt="">
+                                        20 april 2023
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Age: 22 Years
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Expeected: 2000$
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Current: 1800$
+                                    </p>
+                                </div>
+                                <!-- information -->
+                                <div class="appcard_info">
+                                    <!-- name -->
+                                    <a  class="appcard_info_name">Muhammad Hannan</a>
+                                    <!-- info phone number -->
+                                    <a href="tel:01725307989" class="appcard_info_mobile">
+                                        <img src="assets/image/icon/tel.png" alt="">
+                                        01725307989
+                                    </a>
+                                    <!-- location -->
+                                    <ul class="jobPost_descreption_list">
+                                        <!-- item -->
+                                        <li class="jobPost_descreption_item">
+                                            <!-- location icon -->
+                                            <span class="jobpost_list_icon">
+                                                <img src="assets/image/icon/location.png" alt="location">
+                                            </span>
+                                            <!-- text -->
+                                            <span class="job_desgination_text">Panchaghar, Bangladesh</span>
+                                        </li>
+                                    </ul>
+                                    <p class="job_apply_count">Applied <span>1</span> Time</p>
+                                </div>
+                                <!-- Education -->
+                                <div class="appcard_education">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/acafilter.png" alt="">
+                                        Education
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Bachelor of Science (BSc)</p>
+                                        <p class="expren_design_appcard">Bangladesh University of Business and Technology</p>
+                                    </div>
+                                </div>
+                                <!-- expreince -->
+                                <div class="appcard_expreince">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                        4+ Years
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Classic IT LTD</p>
+                                        <p class="expren_design_appcard">Full stack developer in php laravel (2+ years)</p>
+                                    </div>
+
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Datatrix soft Ltd</p>
+                                        <p class="expren_design_appcard">Web Developer (3+ years)</p>
+                                    </div>
+                                </div>
+                                <!-- Eduication -->
+                                <div class="appcard_action">
+                                    <!-- action -->
+                                    <div class="application_action">
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/done.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Shortlist</p>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/delete.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Reject</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user appcard -->
+                            <div class="user_appcard">
+                                <!-- profile -->
+                                <div class="appcard_profile">
+                                    <!-- image -->
+                                    <div class="appcard_profile_image">
+                                        <img src="assets/image/team/t2.jpg" alt="">
+                                    </div>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        <img src="assets/image/icon/whitec.png" alt="">
+                                        20 april 2023
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Age: 22 Years
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Expeected: 2000$
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Current: 1800$
+                                    </p>
+                                </div>
+                                <!-- information -->
+                                <div class="appcard_info">
+                                    <!-- name -->
+                                    <a  class="appcard_info_name">Muhammad Hannan</a>
+                                    <!-- info phone number -->
+                                    <a href="tel:01725307989" class="appcard_info_mobile">
+                                        <img src="assets/image/icon/tel.png" alt="">
+                                        01725307989
+                                    </a>
+                                    <!-- location -->
+                                    <ul class="jobPost_descreption_list">
+                                        <!-- item -->
+                                        <li class="jobPost_descreption_item">
+                                            <!-- location icon -->
+                                            <span class="jobpost_list_icon">
+                                                <img src="assets/image/icon/location.png" alt="location">
+                                            </span>
+                                            <!-- text -->
+                                            <span class="job_desgination_text">Panchaghar, Bangladesh</span>
+                                        </li>
+                                    </ul>
+                                    <p class="job_apply_count">Applied <span>1</span> Time</p>
+                                </div>
+                                <!-- Education -->
+                                <div class="appcard_education">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/acafilter.png" alt="">
+                                        Education
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Bachelor of Science (BSc)</p>
+                                        <p class="expren_design_appcard">Bangladesh University of Business and Technology</p>
+                                    </div>
+                                </div>
+                                <!-- expreince -->
+                                <div class="appcard_expreince">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                        4+ Years
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Classic IT LTD</p>
+                                        <p class="expren_design_appcard">Full stack developer in php laravel (2+ years)</p>
+                                    </div>
+
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Datatrix soft Ltd</p>
+                                        <p class="expren_design_appcard">Web Developer (3+ years)</p>
+                                    </div>
+                                </div>
+                                <!-- Eduication -->
+                                <div class="appcard_action">
+                                    <!-- action -->
+                                    <div class="application_action">
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/done.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Shortlist</p>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/delete.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Reject</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user appcard -->
+                            <div class="user_appcard">
+                                <!-- profile -->
+                                <div class="appcard_profile">
+                                    <!-- image -->
+                                    <div class="appcard_profile_image">
+                                        <img src="assets/image/team/t1.jpg" alt="">
+                                    </div>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        <img src="assets/image/icon/whitec.png" alt="">
+                                        20 april 2023
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Age: 22 Years
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Expeected: 2000$
+                                    </p>
+                                    <!-- date -->
+                                    <p class="appcard_profile_content">
+                                        Current: 1800$
+                                    </p>
+                                </div>
+                                <!-- information -->
+                                <div class="appcard_info">
+                                    <!-- name -->
+                                    <a  class="appcard_info_name">Muhammad Hannan</a>
+                                    <!-- info phone number -->
+                                    <a href="tel:01725307989" class="appcard_info_mobile">
+                                        <img src="assets/image/icon/tel.png" alt="">
+                                        01725307989
+                                    </a>
+                                    <!-- location -->
+                                    <ul class="jobPost_descreption_list">
+                                        <!-- item -->
+                                        <li class="jobPost_descreption_item">
+                                            <!-- location icon -->
+                                            <span class="jobpost_list_icon">
+                                                <img src="assets/image/icon/location.png" alt="location">
+                                            </span>
+                                            <!-- text -->
+                                            <span class="job_desgination_text">Panchaghar, Bangladesh</span>
+                                        </li>
+                                    </ul>
+                                    <p class="job_apply_count">Applied <span>1</span> Time</p>
+                                </div>
+                                <!-- Education -->
+                                <div class="appcard_education">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/acafilter.png" alt="">
+                                        Education
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Bachelor of Science (BSc)</p>
+                                        <p class="expren_design_appcard">Bangladesh University of Business and Technology</p>
+                                    </div>
+                                </div>
+                                <!-- expreince -->
+                                <div class="appcard_expreince">
+                                    <!-- title -->
+                                    <div class="appcard_expreince_title">
+                                        <!-- icon -->
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                        4+ Years
+                                    </div>
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Classic IT LTD</p>
+                                        <p class="expren_design_appcard">Full stack developer in php laravel (2+ years)</p>
+                                    </div>
+
+                                    <!-- company block -->
+                                    <div class="expreince_company_block">
+                                        <!-- appcard company name -->
+                                        <p class="appcard_company_name">Datatrix soft Ltd</p>
+                                        <p class="expren_design_appcard">Web Developer (3+ years)</p>
+                                    </div>
+                                </div>
+                                <!-- Eduication -->
+                                <div class="appcard_action">
+                                    <!-- action -->
+                                    <div class="application_action">
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/done.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Shortlist</p>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="appcard_action_item">
+                                            <!-- delete btn -->
+                                            <button class="action_table_btn main_btn">
+                                                <!-- delete image -->
+                                                <img src="assets/image/admin/delete.png" alt="">
+                                            </button>
+                                            <!-- text -->
+                                            <p class="action_text">Reject</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- popup js -->
+        <script src="assets/js/popup.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>
